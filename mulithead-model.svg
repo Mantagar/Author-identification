@@ -12,12 +12,12 @@
 <!-- n1 -->
 <g id="node1" class="node"><title>n1</title>
 <g id="a_node1"><a xlink:title="[/home/marcin/torch/install/share/lua/5.2/nngraph/init.lua]:76_">
-<ellipse fill="yellow" stroke="black" cx="490.643" cy="-190.856" rx="113.689" ry="58.8803"/>
+<ellipse fill="#aaffaa" stroke="black" cx="490.643" cy="-190.856" rx="113.689" ry="58.8803"/>
 <text text-anchor="middle" x="490.643" y="-217.156" font-family="Times,serif" font-size="14.00">OUTPUT[t]</text>
 <text text-anchor="middle" x="490.643" y="-202.156" font-family="Times,serif" font-size="14.00">AUTHOR[1]</text>
 <text text-anchor="middle" x="490.643" y="-187.156" font-family="Times,serif" font-size="14.00"> (1)</text>
-<text text-anchor="start" x="418.143" y="-172.156" font-family="Times,serif" font-size="14.00">module = nn.LogSoftMax</text>
-<text text-anchor="middle" x="490.643" y="-157.156" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="start" x="418.143" y="-172.156" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="middle" x="490.643" y="-157.156" font-family="Times,serif" font-size="14.00">module = nn.LogSoftMax</text>
 </a>
 </g>
 </g>
@@ -26,9 +26,9 @@
 <g id="a_node2"><a xlink:title="[[C]]:&#45;1_">
 <ellipse fill="none" stroke="black" cx="490.643" cy="-48.0833" rx="208.693" ry="48.1667"/>
 <text text-anchor="middle" x="490.643" y="-66.8833" font-family="Times,serif" font-size="14.00">Node2</text>
-<text text-anchor="start" x="351.143" y="-51.8833" font-family="Times,serif" font-size="14.00">input = {}</text>
+<text text-anchor="start" x="351.143" y="-51.8833" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
 <text text-anchor="start" x="351.143" y="-36.8833" font-family="Times,serif" font-size="14.00">mapindex = {Node1,Node3,Node4,Node5,Node6}</text>
-<text text-anchor="middle" x="490.643" y="-21.8833" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="middle" x="490.643" y="-21.8833" font-family="Times,serif" font-size="14.00">input = {}</text>
 </a>
 </g>
 </g>
@@ -40,12 +40,12 @@
 <!-- n3 -->
 <g id="node3" class="node"><title>n3</title>
 <g id="a_node3"><a xlink:title="[/home/marcin/torch/install/share/lua/5.2/nngraph/init.lua]:76_">
-<ellipse fill="yellow" stroke="black" cx="755.643" cy="-190.856" rx="113.689" ry="58.8803"/>
+<ellipse fill="#aaffaa" stroke="black" cx="755.643" cy="-190.856" rx="113.689" ry="58.8803"/>
 <text text-anchor="middle" x="755.643" y="-217.156" font-family="Times,serif" font-size="14.00">OUTPUT[t]</text>
 <text text-anchor="middle" x="755.643" y="-202.156" font-family="Times,serif" font-size="14.00">AUTHOR[2]</text>
 <text text-anchor="middle" x="755.643" y="-187.156" font-family="Times,serif" font-size="14.00"> (3)</text>
-<text text-anchor="start" x="683.143" y="-172.156" font-family="Times,serif" font-size="14.00">module = nn.LogSoftMax</text>
-<text text-anchor="middle" x="755.643" y="-157.156" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="start" x="683.143" y="-172.156" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="middle" x="755.643" y="-157.156" font-family="Times,serif" font-size="14.00">module = nn.LogSoftMax</text>
 </a>
 </g>
 </g>
@@ -57,12 +57,12 @@
 <!-- n4 -->
 <g id="node4" class="node"><title>n4</title>
 <g id="a_node4"><a xlink:title="[/home/marcin/torch/install/share/lua/5.2/nngraph/init.lua]:76_">
-<ellipse fill="yellow" stroke="black" cx="1030.64" cy="-190.856" rx="113.689" ry="58.8803"/>
+<ellipse fill="#aaffaa" stroke="black" cx="1030.64" cy="-190.856" rx="113.689" ry="58.8803"/>
 <text text-anchor="middle" x="1030.64" y="-217.156" font-family="Times,serif" font-size="14.00">OUTPUT[t]</text>
 <text text-anchor="middle" x="1030.64" y="-202.156" font-family="Times,serif" font-size="14.00">AUTHOR[3]</text>
 <text text-anchor="middle" x="1030.64" y="-187.156" font-family="Times,serif" font-size="14.00"> (4)</text>
-<text text-anchor="start" x="958.143" y="-172.156" font-family="Times,serif" font-size="14.00">module = nn.LogSoftMax</text>
-<text text-anchor="middle" x="1030.64" y="-157.156" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="start" x="958.143" y="-172.156" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="middle" x="1030.64" y="-157.156" font-family="Times,serif" font-size="14.00">module = nn.LogSoftMax</text>
 </a>
 </g>
 </g>
@@ -74,11 +74,11 @@
 <!-- n5 -->
 <g id="node5" class="node"><title>n5</title>
 <g id="a_node5"><a xlink:title="[/home/marcin/torch/install/share/lua/5.2/nngraph/init.lua]:76_">
-<ellipse fill="red" stroke="black" cx="312.643" cy="-819.869" rx="101.233" ry="48.1667"/>
+<ellipse fill="#ffaaaa" stroke="black" cx="312.643" cy="-819.869" rx="101.233" ry="48.1667"/>
 <text text-anchor="middle" x="312.643" y="-838.669" font-family="Times,serif" font-size="14.00">HIDDEN STATE[t][1]</text>
 <text text-anchor="middle" x="312.643" y="-823.669" font-family="Times,serif" font-size="14.00"> (5)</text>
-<text text-anchor="start" x="249.143" y="-808.669" font-family="Times,serif" font-size="14.00">module = nn.Tanh</text>
-<text text-anchor="middle" x="312.643" y="-793.669" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="start" x="249.143" y="-808.669" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="middle" x="312.643" y="-793.669" font-family="Times,serif" font-size="14.00">module = nn.Tanh</text>
 </a>
 </g>
 </g>
@@ -92,8 +92,8 @@
 <g id="a_node14"><a xlink:title="[/home/marcin/torch/install/share/lua/5.2/nngraph/init.lua]:76_">
 <ellipse fill="none" stroke="black" cx="457.643" cy="-698.309" rx="138.686" ry="37.4533"/>
 <text text-anchor="middle" x="457.643" y="-709.609" font-family="Times,serif" font-size="14.00">Node14</text>
-<text text-anchor="start" x="367.643" y="-694.609" font-family="Times,serif" font-size="14.00">module = nn.Linear(256 &#45;&gt; 256)</text>
-<text text-anchor="middle" x="457.643" y="-679.609" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="start" x="367.643" y="-694.609" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="middle" x="457.643" y="-679.609" font-family="Times,serif" font-size="14.00">module = nn.Linear(256 &#45;&gt; 256)</text>
 </a>
 </g>
 </g>
@@ -105,11 +105,11 @@
 <!-- n6 -->
 <g id="node6" class="node"><title>n6</title>
 <g id="a_node6"><a xlink:title="[/home/marcin/torch/install/share/lua/5.2/nngraph/init.lua]:76_">
-<ellipse fill="red" stroke="black" cx="557.643" cy="-444.583" rx="101.233" ry="48.1667"/>
+<ellipse fill="#ffaaaa" stroke="black" cx="557.643" cy="-444.583" rx="101.233" ry="48.1667"/>
 <text text-anchor="middle" x="557.643" y="-463.383" font-family="Times,serif" font-size="14.00">HIDDEN STATE[t][2]</text>
 <text text-anchor="middle" x="557.643" y="-448.383" font-family="Times,serif" font-size="14.00"> (6)</text>
-<text text-anchor="start" x="494.143" y="-433.383" font-family="Times,serif" font-size="14.00">module = nn.Tanh</text>
-<text text-anchor="middle" x="557.643" y="-418.383" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="start" x="494.143" y="-433.383" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="middle" x="557.643" y="-418.383" font-family="Times,serif" font-size="14.00">module = nn.Tanh</text>
 </a>
 </g>
 </g>
@@ -123,8 +123,8 @@
 <g id="a_node7"><a xlink:title="[/home/marcin/torch/install/share/lua/5.2/nngraph/init.lua]:76_">
 <ellipse fill="none" stroke="black" cx="490.643" cy="-323.023" rx="133.787" ry="37.4533"/>
 <text text-anchor="middle" x="490.643" y="-334.323" font-family="Times,serif" font-size="14.00">Node7</text>
-<text text-anchor="start" x="404.143" y="-319.323" font-family="Times,serif" font-size="14.00">module = nn.Linear(256 &#45;&gt; 50)</text>
-<text text-anchor="middle" x="490.643" y="-304.323" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="start" x="404.143" y="-319.323" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="middle" x="490.643" y="-304.323" font-family="Times,serif" font-size="14.00">module = nn.Linear(256 &#45;&gt; 50)</text>
 </a>
 </g>
 </g>
@@ -138,8 +138,8 @@
 <g id="a_node8"><a xlink:title="[/home/marcin/torch/install/share/lua/5.2/nngraph/init.lua]:76_">
 <ellipse fill="none" stroke="black" cx="775.643" cy="-323.023" rx="133.787" ry="37.4533"/>
 <text text-anchor="middle" x="775.643" y="-334.323" font-family="Times,serif" font-size="14.00">Node8</text>
-<text text-anchor="start" x="689.143" y="-319.323" font-family="Times,serif" font-size="14.00">module = nn.Linear(256 &#45;&gt; 50)</text>
-<text text-anchor="middle" x="775.643" y="-304.323" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="start" x="689.143" y="-319.323" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="middle" x="775.643" y="-304.323" font-family="Times,serif" font-size="14.00">module = nn.Linear(256 &#45;&gt; 50)</text>
 </a>
 </g>
 </g>
@@ -153,8 +153,8 @@
 <g id="a_node9"><a xlink:title="[/home/marcin/torch/install/share/lua/5.2/nngraph/init.lua]:76_">
 <ellipse fill="none" stroke="black" cx="1060.64" cy="-323.023" rx="133.787" ry="37.4533"/>
 <text text-anchor="middle" x="1060.64" y="-334.323" font-family="Times,serif" font-size="14.00">Node9</text>
-<text text-anchor="start" x="974.143" y="-319.323" font-family="Times,serif" font-size="14.00">module = nn.Linear(256 &#45;&gt; 50)</text>
-<text text-anchor="middle" x="1060.64" y="-304.323" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="start" x="974.143" y="-319.323" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="middle" x="1060.64" y="-304.323" font-family="Times,serif" font-size="14.00">module = nn.Linear(256 &#45;&gt; 50)</text>
 </a>
 </g>
 </g>
@@ -183,9 +183,9 @@
 <g id="a_node10"><a xlink:title="[/home/marcin/torch/install/share/lua/5.2/nngraph/init.lua]:69_">
 <ellipse fill="none" stroke="black" cx="312.643" cy="-952.036" rx="133.787" ry="48.1667"/>
 <text text-anchor="middle" x="312.643" y="-970.836" font-family="Times,serif" font-size="14.00">Node10</text>
-<text text-anchor="start" x="226.143" y="-955.836" font-family="Times,serif" font-size="14.00">mapindex = {Node12,Node13}</text>
-<text text-anchor="start" x="226.143" y="-940.836" font-family="Times,serif" font-size="14.00">module = nn.CAddTable</text>
-<text text-anchor="middle" x="312.643" y="-925.836" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="start" x="226.143" y="-955.836" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="start" x="226.143" y="-940.836" font-family="Times,serif" font-size="14.00">mapindex = {Node12,Node13}</text>
+<text text-anchor="middle" x="312.643" y="-925.836" font-family="Times,serif" font-size="14.00">module = nn.CAddTable</text>
 </a>
 </g>
 </g>
@@ -199,9 +199,9 @@
 <g id="a_node11"><a xlink:title="[/home/marcin/torch/install/share/lua/5.2/nngraph/init.lua]:69_">
 <ellipse fill="none" stroke="black" cx="557.643" cy="-576.749" rx="133.787" ry="48.1667"/>
 <text text-anchor="middle" x="557.643" y="-595.549" font-family="Times,serif" font-size="14.00">Node11</text>
-<text text-anchor="start" x="471.143" y="-580.549" font-family="Times,serif" font-size="14.00">mapindex = {Node14,Node15}</text>
-<text text-anchor="start" x="471.143" y="-565.549" font-family="Times,serif" font-size="14.00">module = nn.CAddTable</text>
-<text text-anchor="middle" x="557.643" y="-550.549" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="start" x="471.143" y="-580.549" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="start" x="471.143" y="-565.549" font-family="Times,serif" font-size="14.00">mapindex = {Node14,Node15}</text>
+<text text-anchor="middle" x="557.643" y="-550.549" font-family="Times,serif" font-size="14.00">module = nn.CAddTable</text>
 </a>
 </g>
 </g>
@@ -215,8 +215,8 @@
 <g id="a_node12"><a xlink:title="[/home/marcin/torch/install/share/lua/5.2/nngraph/init.lua]:76_">
 <ellipse fill="none" stroke="black" cx="133.643" cy="-1073.6" rx="133.787" ry="37.4533"/>
 <text text-anchor="middle" x="133.643" y="-1084.9" font-family="Times,serif" font-size="14.00">Node12</text>
-<text text-anchor="start" x="47.1432" y="-1069.9" font-family="Times,serif" font-size="14.00">module = nn.Linear(50 &#45;&gt; 256)</text>
-<text text-anchor="middle" x="133.643" y="-1054.9" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="start" x="47.1432" y="-1069.9" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="middle" x="133.643" y="-1054.9" font-family="Times,serif" font-size="14.00">module = nn.Linear(50 &#45;&gt; 256)</text>
 </a>
 </g>
 </g>
@@ -230,8 +230,8 @@
 <g id="a_node13"><a xlink:title="[/home/marcin/torch/install/share/lua/5.2/nngraph/init.lua]:76_">
 <ellipse fill="none" stroke="black" cx="423.643" cy="-1073.6" rx="138.686" ry="37.4533"/>
 <text text-anchor="middle" x="423.643" y="-1084.9" font-family="Times,serif" font-size="14.00">Node13</text>
-<text text-anchor="start" x="333.643" y="-1069.9" font-family="Times,serif" font-size="14.00">module = nn.Linear(256 &#45;&gt; 256)</text>
-<text text-anchor="middle" x="423.643" y="-1054.9" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="start" x="333.643" y="-1069.9" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="middle" x="423.643" y="-1054.9" font-family="Times,serif" font-size="14.00">module = nn.Linear(256 &#45;&gt; 256)</text>
 </a>
 </g>
 </g>
@@ -250,8 +250,8 @@
 <g id="a_node15"><a xlink:title="[/home/marcin/torch/install/share/lua/5.2/nngraph/init.lua]:76_">
 <ellipse fill="none" stroke="black" cx="624.643" cy="-952.036" rx="138.686" ry="37.4533"/>
 <text text-anchor="middle" x="624.643" y="-963.336" font-family="Times,serif" font-size="14.00">Node15</text>
-<text text-anchor="start" x="534.643" y="-948.336" font-family="Times,serif" font-size="14.00">module = nn.Linear(256 &#45;&gt; 256)</text>
-<text text-anchor="middle" x="624.643" y="-933.336" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="start" x="534.643" y="-948.336" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="middle" x="624.643" y="-933.336" font-family="Times,serif" font-size="14.00">module = nn.Linear(256 &#45;&gt; 256)</text>
 </a>
 </g>
 </g>
@@ -262,12 +262,12 @@
 </g>
 <!-- n16 -->
 <g id="node16" class="node"><title>n16</title>
-<g id="a_node16"><a xlink:title="[Model.lua]:5_">
-<ellipse fill="yellow" stroke="black" cx="167.643" cy="-1195.16" rx="94.0904" ry="48.1667"/>
+<g id="a_node16"><a xlink:title="[Model.lua]:7_">
+<ellipse fill="#ffffaa" stroke="black" cx="167.643" cy="-1195.16" rx="94.0904" ry="48.1667"/>
 <text text-anchor="middle" x="167.643" y="-1213.96" font-family="Times,serif" font-size="14.00">INPUT[t]</text>
 <text text-anchor="middle" x="167.643" y="-1198.96" font-family="Times,serif" font-size="14.00"> (16)</text>
-<text text-anchor="start" x="109.143" y="-1183.96" font-family="Times,serif" font-size="14.00">module = nn.Identity</text>
-<text text-anchor="middle" x="167.643" y="-1168.96" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="start" x="109.143" y="-1183.96" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="middle" x="167.643" y="-1168.96" font-family="Times,serif" font-size="14.00">module = nn.Identity</text>
 </a>
 </g>
 </g>
@@ -278,12 +278,12 @@
 </g>
 <!-- n17 -->
 <g id="node17" class="node"><title>n17</title>
-<g id="a_node17"><a xlink:title="[Model.lua]:7_">
-<ellipse fill="lightblue" stroke="black" cx="388.643" cy="-1195.16" rx="108.789" ry="48.1667"/>
+<g id="a_node17"><a xlink:title="[Model.lua]:9_">
+<ellipse fill="#aaaaff" stroke="black" cx="388.643" cy="-1195.16" rx="108.789" ry="48.1667"/>
 <text text-anchor="middle" x="388.643" y="-1213.96" font-family="Times,serif" font-size="14.00">HIDDEN STATE[t&#45;1][1]</text>
 <text text-anchor="middle" x="388.643" y="-1198.96" font-family="Times,serif" font-size="14.00"> (17)</text>
-<text text-anchor="start" x="319.643" y="-1183.96" font-family="Times,serif" font-size="14.00">module = nn.Identity</text>
-<text text-anchor="middle" x="388.643" y="-1168.96" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="start" x="319.643" y="-1183.96" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="middle" x="388.643" y="-1168.96" font-family="Times,serif" font-size="14.00">module = nn.Identity</text>
 </a>
 </g>
 </g>
@@ -294,12 +294,12 @@
 </g>
 <!-- n18 -->
 <g id="node18" class="node"><title>n18</title>
-<g id="a_node18"><a xlink:title="[Model.lua]:7_">
-<ellipse fill="lightblue" stroke="black" cx="624.643" cy="-1195.16" rx="108.789" ry="48.1667"/>
+<g id="a_node18"><a xlink:title="[Model.lua]:9_">
+<ellipse fill="#aaaaff" stroke="black" cx="624.643" cy="-1195.16" rx="108.789" ry="48.1667"/>
 <text text-anchor="middle" x="624.643" y="-1213.96" font-family="Times,serif" font-size="14.00">HIDDEN STATE[t&#45;1][2]</text>
 <text text-anchor="middle" x="624.643" y="-1198.96" font-family="Times,serif" font-size="14.00"> (18)</text>
-<text text-anchor="start" x="555.643" y="-1183.96" font-family="Times,serif" font-size="14.00">module = nn.Identity</text>
-<text text-anchor="middle" x="624.643" y="-1168.96" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="start" x="555.643" y="-1183.96" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="middle" x="624.643" y="-1168.96" font-family="Times,serif" font-size="14.00">module = nn.Identity</text>
 </a>
 </g>
 </g>
@@ -314,8 +314,8 @@
 <ellipse fill="none" stroke="black" cx="190.643" cy="-1327.32" rx="77.5641" ry="48.1667"/>
 <text text-anchor="middle" x="190.643" y="-1346.12" font-family="Times,serif" font-size="14.00">Node19</text>
 <text text-anchor="start" x="143.643" y="-1331.12" font-family="Times,serif" font-size="14.00">selectindex = 1</text>
-<text text-anchor="start" x="143.643" y="-1316.12" font-family="Times,serif" font-size="14.00">input = {}</text>
-<text text-anchor="middle" x="190.643" y="-1301.12" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="start" x="143.643" y="-1316.12" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="middle" x="190.643" y="-1301.12" font-family="Times,serif" font-size="14.00">input = {}</text>
 </a>
 </g>
 </g>
@@ -330,8 +330,8 @@
 <ellipse fill="none" stroke="black" cx="388.643" cy="-1327.32" rx="77.5641" ry="48.1667"/>
 <text text-anchor="middle" x="388.643" y="-1346.12" font-family="Times,serif" font-size="14.00">Node20</text>
 <text text-anchor="start" x="341.643" y="-1331.12" font-family="Times,serif" font-size="14.00">selectindex = 2</text>
-<text text-anchor="start" x="341.643" y="-1316.12" font-family="Times,serif" font-size="14.00">input = {}</text>
-<text text-anchor="middle" x="388.643" y="-1301.12" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="start" x="341.643" y="-1316.12" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="middle" x="388.643" y="-1301.12" font-family="Times,serif" font-size="14.00">input = {}</text>
 </a>
 </g>
 </g>
@@ -346,8 +346,8 @@
 <ellipse fill="none" stroke="black" cx="593.643" cy="-1327.32" rx="77.5641" ry="48.1667"/>
 <text text-anchor="middle" x="593.643" y="-1346.12" font-family="Times,serif" font-size="14.00">Node21</text>
 <text text-anchor="start" x="546.643" y="-1331.12" font-family="Times,serif" font-size="14.00">selectindex = 3</text>
-<text text-anchor="start" x="546.643" y="-1316.12" font-family="Times,serif" font-size="14.00">input = {}</text>
-<text text-anchor="middle" x="593.643" y="-1301.12" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="start" x="546.643" y="-1316.12" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="middle" x="593.643" y="-1301.12" font-family="Times,serif" font-size="14.00">input = {}</text>
 </a>
 </g>
 </g>
@@ -361,8 +361,8 @@
 <g id="a_node22"><a xlink:title="[[C]]:&#45;1_ split at [...e/marcin/torch/install/share/lua/5.2/nngraph/gmodule.lua]:96&#45;mnode">
 <ellipse fill="none" stroke="black" cx="388.643" cy="-1448.88" rx="80.7205" ry="37.4533"/>
 <text text-anchor="middle" x="388.643" y="-1460.18" font-family="Times,serif" font-size="14.00">Node22</text>
-<text text-anchor="start" x="339.643" y="-1445.18" font-family="Times,serif" font-size="14.00">nSplitOutputs = 3</text>
-<text text-anchor="middle" x="388.643" y="-1430.18" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="start" x="339.643" y="-1445.18" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="middle" x="388.643" y="-1430.18" font-family="Times,serif" font-size="14.00">nSplitOutputs = 3</text>
 </a>
 </g>
 </g>
@@ -386,8 +386,8 @@
 <g id="a_node23"><a xlink:title="[[C]]:&#45;1_">
 <ellipse fill="none" stroke="black" cx="388.643" cy="-1559.84" rx="77.5641" ry="37.4533"/>
 <text text-anchor="middle" x="388.643" y="-1571.14" font-family="Times,serif" font-size="14.00">Node23</text>
-<text text-anchor="start" x="341.643" y="-1556.14" font-family="Times,serif" font-size="14.00">input = {}</text>
-<text text-anchor="middle" x="388.643" y="-1541.14" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="start" x="341.643" y="-1556.14" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="middle" x="388.643" y="-1541.14" font-family="Times,serif" font-size="14.00">input = {}</text>
 </a>
 </g>
 </g>
