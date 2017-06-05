@@ -1,3 +1,4 @@
+torch.setnumthreads(1) --after reinstalling torch script slowed 10 times, it brings back performance to about 2 times the time before upgrade
 local TP=require 'text_processor.lua'
 
 local data1=TP.convertFileIntoData('data/author1',TP.enAlphabet)

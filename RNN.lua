@@ -21,12 +21,12 @@ function RNN.createModel(input_size,hidden_size,rnn_size,heads)
 	for i,each in ipairs(input) do
 			each:annotate{name='HIDDEN STATE[t-1]['..(i-1)..']\n', graphAttributes = {style="filled", fillcolor = '#aaaaff'}}
 	end
-	input[1]:annotate{name='INPUT[t]\n', graphAttributes = {style="filled", fillcolor = '#ffffaa'}}
+	input[1]:annotate{name='INPUT\n', graphAttributes = {style="filled", fillcolor = '#ffffaa'}}
 	for i,each in ipairs(hidden) do
 			each:annotate{name='HIDDEN STATE[t]['..i..']\n', graphAttributes = {style="filled", fillcolor = '#ffaaaa'}}
 	end
 	for i=1,heads do
-		output[i]:annotate{name='OUTPUT[t]\nAUTHOR['..i..']\n', graphAttributes = {style="filled", fillcolor = '#aaffaa'}}
+		output[i]:annotate{name='OUTPUT\nHEAD['..i..']\n', graphAttributes = {style="filled", fillcolor = '#aaffaa'}}
 	end
 	print("INPUT: "..#input,"HIDDEN: "..#hidden,"OUTPUT: "..#output)
 
