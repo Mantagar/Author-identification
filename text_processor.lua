@@ -1,23 +1,47 @@
 local TP={}
 
-function TP.getAlphabet(string)
---convert to array
-	local array = {}
-	for i=1,#string do
-		array[i]=string:sub(i,i)
-	end
---pick only unique characters
-	local hash = {}
-	local alphabet = {}
-	for _,v in ipairs(array) do
-		if (not hash[v]) then
-			alphabet[#alphabet+1] = v
-			hash[v] = true
-		end
-	end
-
-	return alphabet,array
-end
+TP.enAlphabet={
+' ',
+'e',
+'t',
+'o',
+'a',
+'n',
+'i',
+'s',
+'h',
+'r',--10
+'\n',
+'l',
+'d',
+'u',
+'y',
+'m',
+'g',
+'w',
+',',
+"'",--20
+'.',
+'f',
+'c',
+'b',
+'p',
+'-',
+'k',
+'¹',--used as capital letter prefix
+'v',
+'!',--30
+'?',
+';',
+'j',
+'q',
+'x',
+'"',
+'z',
+':',
+'(',
+')'--40
+}
 
 function TP.charToTensor(char,alphabet)
 --returns tensor with of zeros and one one where position of the char is in the alphabet
@@ -41,15 +65,14 @@ function TP.convertFileIntoData(filename,alphabet)
 	file=io.open(filename,"r")
 	text=file:read("*a")
 	file:close()
-	
-	local alphabet,array=TP.getAlphabet(text)
 
-	for i=1,#array do
-		array[i]=TP.charToTensor(array[i],alphabet)
+	--pick char and convert to tensor
+	local data = {}
+	for i=1,#text do
+		data[i]=TP.charToTensor(text:sub(i,i),alphabet)
 	end
 	
-	array.alphabet=alphabet
-	return array
+	return data
 end
 
 return TP
