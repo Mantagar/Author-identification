@@ -5,93 +5,93 @@ digraph G {
 	];
 	n1	 [fillcolor="#aaffaa",
 		height=1.6303,
-		label="OUTPUT[t]\nAUTHOR[1]\n (1)\nreverseMap = {}\lmodule = nn.Linear(256 -> 40)",
+		label="OUTPUT[t]\nAUTHOR[1]\n (1)\nmodule = nn.Linear(256 -> 40)\lreverseMap = {}",
 		pos="452.64,190.86",
 		style=filled,
-		tooltip="[/home/marcin/torch/install/share/lua/5.2/nngraph/init.lua]:76_",
+		tooltip="[/home/marcin/torch/install/share/lua/5.3/nngraph/init.lua]:76_",
 		width=3.7123];
 	n2	 [height=1.3356,
-		label="Node2\nreverseMap = {}\linput = {}\lmapindex = {Node1,Node3,Node4,Node5,Node6}",
+		label="Node2\nreverseMap = {}\lmapindex = {Node1,Node3,Node4,Node5,Node6}\linput = {}",
 		pos="614.64,48.083",
 		tooltip="[[C]]:-1_",
 		width=5.7943];
 	n1 -> n2	 [pos="e,562.2,94.652 512.05,138.24 525.91,126.19 540.69,113.35 554.59,101.27"];
 	n3	 [fillcolor="#aaffaa",
 		height=1.6303,
-		label="OUTPUT[t]\nAUTHOR[2]\n (3)\nreverseMap = {}\lmodule = nn.Linear(256 -> 40)",
+		label="OUTPUT[t]\nAUTHOR[2]\n (3)\nmodule = nn.Linear(256 -> 40)\lreverseMap = {}",
 		pos="776.64,190.86",
 		style=filled,
-		tooltip="[/home/marcin/torch/install/share/lua/5.2/nngraph/init.lua]:76_",
+		tooltip="[/home/marcin/torch/install/share/lua/5.3/nngraph/init.lua]:76_",
 		width=3.7123];
 	n3 -> n2	 [pos="e,667.08,94.652 717.24,138.24 703.37,126.19 688.6,113.35 674.7,101.27"];
 	n4	 [fillcolor="#aaffaa",
 		height=1.6303,
-		label="OUTPUT[t]\nAUTHOR[3]\n (4)\nreverseMap = {}\lmodule = nn.Linear(256 -> 40)",
+		label="OUTPUT[t]\nAUTHOR[3]\n (4)\nmodule = nn.Linear(256 -> 40)\lreverseMap = {}",
 		pos="1061.6,190.86",
 		style=filled,
-		tooltip="[/home/marcin/torch/install/share/lua/5.2/nngraph/init.lua]:76_",
+		tooltip="[/home/marcin/torch/install/share/lua/5.3/nngraph/init.lua]:76_",
 		width=3.7123];
 	n4 -> n2	 [pos="e,755.4,83.65 966.75,149.48 951.13,143.36 935.02,137.36 919.64,132.17 869.93,115.36 814.8,99.521 765.23,86.266"];
 	n5	 [fillcolor="#ffaaaa",
 		height=1.3356,
-		label="HIDDEN STATE[t][1]\n (5)\nreverseMap = {}\lmodule = nn.Tanh",
+		label="HIDDEN STATE[t][1]\n (5)\nmodule = nn.Tanh\lreverseMap = {}",
 		pos="314.64,708.92",
 		style=filled,
-		tooltip="[/home/marcin/torch/install/share/lua/5.2/nngraph/init.lua]:76_",
+		tooltip="[/home/marcin/torch/install/share/lua/5.3/nngraph/init.lua]:76_",
 		width=2.8088];
 	n5 -> n2	 [pos="e,447.91,77.077 307.18,660.93 300.14,612.43 290.64,534.53 290.64,466.8 290.64,466.8 290.64,466.8 290.64,332.63 290.64,243.14 252.01,\
 200.63 309.64,132.17 327.89,110.49 381.06,92.776 437.99,79.362"];
 	n11	 [height=1.041,
-		label="Node11\nreverseMap = {}\lmodule = nn.Linear(256 -> 256)",
+		label="Node11\nmodule = nn.Linear(256 -> 256)\lreverseMap = {}",
 		pos="457.64,587.36",
-		tooltip="[/home/marcin/torch/install/share/lua/5.2/nngraph/init.lua]:76_",
+		tooltip="[/home/marcin/torch/install/share/lua/5.3/nngraph/init.lua]:76_",
 		width=3.8498];
 	n5 -> n11	 [pos="e,415.95,623.21 363.86,666.77 378.17,654.8 393.81,641.73 408.14,629.74"];
 	n6	 [fillcolor="#ffaaaa",
 		height=1.3356,
-		label="HIDDEN STATE[t][2]\n (6)\nreverseMap = {}\lmodule = nn.Tanh",
+		label="HIDDEN STATE[t][2]\n (6)\nmodule = nn.Tanh\lreverseMap = {}",
 		pos="619.64,333.63",
 		style=filled,
-		tooltip="[/home/marcin/torch/install/share/lua/5.2/nngraph/init.lua]:76_",
+		tooltip="[/home/marcin/torch/install/share/lua/5.3/nngraph/init.lua]:76_",
 		width=2.8088];
 	n6 -> n1	 [pos="e,513.64,243.27 570.44,291.15 555.14,278.26 537.99,263.8 521.61,249.99"];
 	n6 -> n2	 [pos="e,615.48,96.336 618.81,285.49 617.95,236.33 616.59,159.23 615.66,106.53"];
 	n6 -> n3	 [pos="e,718.73,243.78 666.32,290.77 680.33,278.21 695.97,264.19 710.96,250.75"];
 	n6 -> n4	 [pos="e,966.74,232.18 708.74,310.84 768.86,295.44 849.68,273.36 919.64,249.55 931.89,245.38 944.6,240.71 957.17,235.89"];
 	n7	 [height=1.3356,
-		label="Node7\nreverseMap = {}\lmodule = nn.CAddTable\lmapindex = {Node9,Node10}",
+		label="Node7\nmodule = nn.CAddTable\lreverseMap = {}\lmapindex = {Node9,Node10}",
 		pos="314.64,841.08",
-		tooltip="[/home/marcin/torch/install/share/lua/5.2/nngraph/init.lua]:69_",
+		tooltip="[/home/marcin/torch/install/share/lua/5.3/nngraph/init.lua]:69_",
 		width=3.5748];
 	n7 -> n5	 [pos="e,314.64,757.02 314.64,792.72 314.64,784.45 314.64,775.77 314.64,767.27"];
 	n8	 [height=1.3356,
-		label="Node8\nreverseMap = {}\lmodule = nn.CAddTable\lmapindex = {Node11,Node12}",
+		label="Node8\nmodule = nn.CAddTable\lreverseMap = {}\lmapindex = {Node11,Node12}",
 		pos="619.64,465.8",
-		tooltip="[/home/marcin/torch/install/share/lua/5.2/nngraph/init.lua]:69_",
+		tooltip="[/home/marcin/torch/install/share/lua/5.3/nngraph/init.lua]:69_",
 		width=3.7123];
 	n8 -> n6	 [pos="e,619.64,381.74 619.64,417.43 619.64,409.17 619.64,400.48 619.64,391.98"];
 	n9	 [height=1.041,
-		label="Node9\nreverseMap = {}\lmodule = nn.Linear(40 -> 256)",
+		label="Node9\nmodule = nn.Linear(40 -> 256)\lreverseMap = {}",
 		pos="133.64,962.64",
-		tooltip="[/home/marcin/torch/install/share/lua/5.2/nngraph/init.lua]:76_",
+		tooltip="[/home/marcin/torch/install/share/lua/5.3/nngraph/init.lua]:76_",
 		width=3.7123];
 	n9 -> n7	 [pos="e,252.19,883.33 185.03,927.7 203.23,915.67 224.06,901.92 243.61,889"];
 	n10	 [height=1.041,
-		label="Node10\nreverseMap = {}\lmodule = nn.Linear(256 -> 256)",
+		label="Node10\nmodule = nn.Linear(256 -> 256)\lreverseMap = {}",
 		pos="423.64,962.64",
-		tooltip="[/home/marcin/torch/install/share/lua/5.2/nngraph/init.lua]:76_",
+		tooltip="[/home/marcin/torch/install/share/lua/5.3/nngraph/init.lua]:76_",
 		width=3.8498];
 	n10 -> n7	 [pos="e,355.64,887.05 391.23,926.09 382.25,916.23 372.29,905.32 362.62,894.7"];
 	n11 -> n8	 [pos="e,561.96,509.37 504.5,551.77 519.78,540.5 537.04,527.76 553.46,515.64"];
 	n12	 [height=1.041,
-		label="Node12\nreverseMap = {}\lmodule = nn.Linear(256 -> 256)",
+		label="Node12\nmodule = nn.Linear(256 -> 256)\lreverseMap = {}",
 		pos="624.64,841.08",
-		tooltip="[/home/marcin/torch/install/share/lua/5.2/nngraph/init.lua]:76_",
+		tooltip="[/home/marcin/torch/install/share/lua/5.3/nngraph/init.lua]:76_",
 		width=3.8498];
 	n12 -> n8	 [pos="e,620.28,514.07 624.15,803.27 623.28,738.05 621.45,601.79 620.41,524.16"];
 	n13	 [fillcolor="#ffffaa",
 		height=1.3356,
-		label="INPUT[t]\n (13)\nreverseMap = {}\lmodule = nn.Identity",
+		label="INPUT[t]\n (13)\nmodule = nn.Identity\lreverseMap = {}",
 		pos="167.64,1084.2",
 		style=filled,
 		tooltip="[./RNN.lua]:8_",
@@ -99,7 +99,7 @@ digraph G {
 	n13 -> n9	 [pos="e,144,1000.1 154.3,1036.3 151.82,1027.5 149.22,1018.4 146.74,1009.7"];
 	n14	 [fillcolor="#aaaaff",
 		height=1.3356,
-		label="HIDDEN STATE[t-1][1]\n (14)\nreverseMap = {}\lmodule = nn.Identity",
+		label="HIDDEN STATE[t-1][1]\n (14)\nmodule = nn.Identity\lreverseMap = {}",
 		pos="388.64,1084.2",
 		style=filled,
 		tooltip="[./RNN.lua]:10_",
@@ -107,34 +107,34 @@ digraph G {
 	n14 -> n10	 [pos="e,412.98,1000.1 402.38,1036.3 404.94,1027.5 407.61,1018.4 410.16,1009.7"];
 	n15	 [fillcolor="#aaaaff",
 		height=1.3356,
-		label="HIDDEN STATE[t-1][2]\n (15)\nreverseMap = {}\lmodule = nn.Identity",
+		label="HIDDEN STATE[t-1][2]\n (15)\nmodule = nn.Identity\lreverseMap = {}",
 		pos="624.64,1084.2",
 		style=filled,
 		tooltip="[./RNN.lua]:10_",
 		width=3.0248];
 	n15 -> n12	 [pos="e,624.64,878.7 624.64,1035.9 624.64,993.28 624.64,931.11 624.64,888.75"];
 	n16	 [height=1.3356,
-		label="Node16\nreverseMap = {}\linput = {}\lselectindex = 1",
+		label="Node16\nselectindex = 1\lreverseMap = {}\linput = {}",
 		pos="190.64,1216.4",
 		tooltip="[[C]]:-1_-1",
 		width=2.1606];
 	n16 -> n13	 [pos="e,175.93,1132.1 182.34,1168.4 180.84,1159.9 179.26,1151 177.72,1142.2"];
 	n17	 [height=1.3356,
-		label="Node17\nreverseMap = {}\linput = {}\lselectindex = 2",
+		label="Node17\nselectindex = 2\lreverseMap = {}\linput = {}",
 		pos="388.64,1216.4",
 		tooltip="[[C]]:-1_-2",
 		width=2.1606];
 	n17 -> n14	 [pos="e,388.64,1132.3 388.64,1168 388.64,1159.7 388.64,1151.1 388.64,1142.6"];
 	n18	 [height=1.3356,
-		label="Node18\nreverseMap = {}\linput = {}\lselectindex = 3",
+		label="Node18\nselectindex = 3\lreverseMap = {}\linput = {}",
 		pos="593.64,1216.4",
 		tooltip="[[C]]:-1_-3",
 		width=2.1606];
 	n18 -> n15	 [pos="e,613.41,1132.4 604.75,1168.7 606.79,1160.2 608.95,1151.1 611.06,1142.3"];
 	n19	 [height=1.041,
-		label="Node19\nreverseMap = {}\lnSplitOutputs = 3",
+		label="Node19\nnSplitOutputs = 3\lreverseMap = {}",
 		pos="388.64,1337.9",
-		tooltip="[[C]]:-1_ split at [...e/marcin/torch/install/share/lua/5.2/nngraph/gmodule.lua]:96-mnode",
+		tooltip="[[C]]:-1_ split at [...e/marcin/torch/install/share/lua/5.3/nngraph/gmodule.lua]:96-mnode",
 		width=2.2392];
 	n19 -> n16	 [pos="e,245.7,1250.6 340.46,1307.8 314.64,1292.2 282.49,1272.8 254.6,1256"];
 	n19 -> n17	 [pos="e,388.64,1264.7 388.64,1300.4 388.64,1292.3 388.64,1283.5 388.64,1274.8"];

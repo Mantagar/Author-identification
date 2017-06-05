@@ -165,7 +165,7 @@ for iteration=1,#data-rnn.seq_size do
 		end
 	end
 end
---Decrease learning rate after each epoch (not here) TODO
+--Decrease learning rate after each epoch (not here - outside) TODO
 learning_rate=learning_rate*0.97
 local clock=os.clock()-time
 local log=io.open("results.txt","a")

@@ -66,10 +66,13 @@ function TP.convertFileIntoData(filename,alphabet)
 	text=file:read("*a")
 	file:close()
 
-	--pick char and convert to tensor
-	local data = {}
-	for i=1,#text do
-		data[i]=TP.charToTensor(text:sub(i,i),alphabet)
+	--pick utf8 char and convert to tensor
+	local data={}
+	local i=1
+	for _,c in utf8.codes(text) do
+		data[i]=TP.charToTensor(utf8.char(c),alphabet)
+		--io.write(TP.tensorToChar(data[i],alphabet))
+		i=i+1
 	end
 	
 	return data

@@ -61,5 +61,3 @@ print("2-----"..generateText(rnn,TP.enAlphabet,100,"seed",2))
 print("3-----"..generateText(rnn,TP.enAlphabet,100,"seed",3))
 end
 
-
-
