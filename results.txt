@@ -22,3 +22,711 @@ Epoch processed within 207.400313s (3min 27s)
 Average error for head 1 = 3.3525113348712
 Learning rate decayed to 0.000194
 Epoch processed within 326.011253s (5min 26s)
+-----------------------------------------------------------------
+Average error for head 2 = 3.4536584873676
+Learning rate decayed to 0.000194
+Epoch processed within 518.40955s (8min 38s)
+-----------------------------------------------------------------
+Average error for head 3 = 3.2480664234239
+Learning rate decayed to 0.000194
+Epoch processed within 240.199686s (4min 0s)
+-----------------------------------------------------------------
+Average error for head 1 = 3.1396538841876
+Learning rate decayed to 0.000194
+Epoch processed within 371.513608s (6min 11s)
+-----------------------------------------------------------------
+Average error for head 2 = 2.8000926110396
+Learning rate decayed to 0.000194
+Epoch processed within 426.292642s (7min 6s)
+-----------------------------------------------------------------
+Average error for head 3 = 2.8025756157512
+Learning rate decayed to 0.000194
+Epoch processed within 239.23004s (3min 59s)
+-----------------------------------------------------------------
+Average error for head 1 = 3.0640499879686
+Learning rate decayed to 0.000194
+Epoch processed within 345.369684s (5min 45s)
+-----------------------------------------------------------------
+Average error for head 2 = 2.3293737882131
+Learning rate decayed to 0.000194
+Epoch processed within 505.828496s (8min 25s)
+-----------------------------------------------------------------
+Average error for head 3 = 2.5518997865556
+Learning rate decayed to 0.000194
+Epoch processed within 247.838475s (4min 7s)
+-----------------------------------------------------------------
+Average error for head 1 = 3.0289840063246
+Learning rate decayed to 0.000194
+Epoch processed within 293.638181s (4min 53s)
+-----------------------------------------------------------------
+Average error for head 2 = 2.1457585317003
+Learning rate decayed to 0.000194
+Epoch processed within 375.575287s (6min 15s)
+-----------------------------------------------------------------
+Average error for head 3 = 2.371777365997
+Learning rate decayed to 0.000194
+Epoch processed within 188.951551s (3min 8s)
+-----------------------------------------------------------------
+Average error for head 1 = 3.0078556097135
+Learning rate decayed to 0.000194
+Epoch processed within 263.292892s (4min 23s)
+-----------------------------------------------------------------
+Average error for head 2 = 2.0764743988103
+Learning rate decayed to 0.000194
+Epoch processed within 377.815468s (6min 17s)
+-----------------------------------------------------------------
+Average error for head 3 = 2.204399876677
+Learning rate decayed to 0.000194
+Epoch processed within 242.901066s (4min 2s)
+-----------------------------------------------------------------
+Average error for head 1 = 3.015694398887
+Learning rate decayed to 0.000194
+Epoch processed within 327.721014s (5min 27s)
+-----------------------------------------------------------------
+Average error for head 2 = 2.0501450878858
+Learning rate decayed to 0.000194
+Epoch processed within 415.988489s (6min 55s)
+-----------------------------------------------------------------
+Average error for head 3 = 2.0498154560578
+Learning rate decayed to 0.000194
+Epoch processed within 220.460139s (3min 40s)
+-----------------------------------------------------------------
+Average error for head 1 = 3.0130760154854
+Learning rate decayed to 0.000194
+Epoch processed within 275.818909s (4min 35s)
+-----------------------------------------------------------------
+Average error for head 2 = 2.0384257088959
+Learning rate decayed to 0.000194
+Epoch processed within 440.133902s (7min 20s)
+-----------------------------------------------------------------
+Average error for head 3 = 1.9158966395354
+Learning rate decayed to 0.000194
+Epoch processed within 201.508143s (3min 21s)
+-----------------------------------------------------------------
+Average error for head 1 = 2.9952535359798
+Learning rate decayed to 0.000194
+Epoch processed within 258.679348s (4min 18s)
+-----------------------------------------------------------------
+Average error for head 2 = 2.0291300235591
+Learning rate decayed to 0.000194
+Epoch processed within 399.832496s (6min 39s)
+-----------------------------------------------------------------
+Average error for head 3 = 1.8050400151137
+Learning rate decayed to 0.000194
+Epoch processed within 192.324434s (3min 12s)
+-----------------------------------------------------------------
+Average error for head 1 = 2.9716028972904
+Learning rate decayed to 0.000194
+Epoch processed within 307.103946s (5min 7s)
+-----------------------------------------------------------------
+Average error for head 2 = 2.0228395964573
+Learning rate decayed to 0.000194
+Epoch processed within 363.588493s (6min 3s)
+-----------------------------------------------------------------
+Average error for head 3 = 1.7148501184171
+Learning rate decayed to 0.000194
+Epoch processed within 226.934834s (3min 46s)
+-----------------------------------------------------------------
+Average error for head 1 = 2.9449599929071
+Learning rate decayed to 0.000194
+Epoch processed within 274.219289s (4min 34s)
+-----------------------------------------------------------------
+Average error for head 2 = 2.019973087185
+Learning rate decayed to 0.000194
+Epoch processed within 430.200216s (7min 10s)
+-----------------------------------------------------------------
+Average error for head 3 = 1.6388586559262
+Learning rate decayed to 0.000194
+Epoch processed within 202.851462s (3min 22s)
+-----------------------------------------------------------------
+Average error for head 1 = 2.914290475119
+Learning rate decayed to 0.000194
+Epoch processed within 312.164774s (5min 12s)
+-----------------------------------------------------------------
+Average error for head 2 = 2.018728827365
+Learning rate decayed to 0.000194
+Epoch processed within 419.577288s (6min 59s)
+-----------------------------------------------------------------
+Average error for head 3 = 1.5726693590656
+Learning rate decayed to 0.000194
+Epoch processed within 218.852156s (3min 38s)
+-----------------------------------------------------------------
+Average error for head 1 = 2.8798413128577
+Learning rate decayed to 0.000194
+Epoch processed within 306.541526s (5min 6s)
+-----------------------------------------------------------------
+Average error for head 2 = 2.0180471723631
+Learning rate decayed to 0.000194
+Epoch processed within 398.558036s (6min 38s)
+-----------------------------------------------------------------
+Average error for head 3 = 1.515751847261
+Learning rate decayed to 0.000194
+Epoch processed within 211.119641s (3min 31s)
+-----------------------------------------------------------------
+Average error for head 1 = 2.8417864632684
+Learning rate decayed to 0.000194
+Epoch processed within 293.740564s (4min 53s)
+-----------------------------------------------------------------
+Average error for head 2 = 2.0175595479028
+Learning rate decayed to 0.000194
+Epoch processed within 407.072357s (6min 47s)
+-----------------------------------------------------------------
+Average error for head 3 = 1.4685081704215
+Learning rate decayed to 0.000194
+Epoch processed within 199.299166s (3min 19s)
+-----------------------------------------------------------------
+Average error for head 1 = 2.8012993349973
+Learning rate decayed to 0.000194
+Epoch processed within 294.379575s (4min 54s)
+-----------------------------------------------------------------
+Average error for head 2 = 2.0164123857654
+Learning rate decayed to 0.000194
+Epoch processed within 408.419156s (6min 48s)
+-----------------------------------------------------------------
+Average error for head 3 = 1.4302678906326
+Learning rate decayed to 0.000194
+Epoch processed within 214.647106s (3min 34s)
+-----------------------------------------------------------------
+Average error for head 1 = 2.7608897073497
+Learning rate decayed to 0.000194
+Epoch processed within 370.865145s (6min 10s)
+-----------------------------------------------------------------
+Average error for head 2 = 2.014083174071
+Learning rate decayed to 0.000194
+Epoch processed within 606.512568s (10min 6s)
+-----------------------------------------------------------------
+Average error for head 3 = 1.398954091414
+Learning rate decayed to 0.000194
+Epoch processed within 262.485646s (4min 22s)
+-----------------------------------------------------------------
+Average error for head 1 = 2.7220198823536
+Learning rate decayed to 0.000194
+Epoch processed within 404.814983s (6min 44s)
+-----------------------------------------------------------------
+Average error for head 2 = 2.0109091432442
+Learning rate decayed to 0.000194
+Epoch processed within 479.197551s (7min 59s)
+-----------------------------------------------------------------
+Average error for head 3 = 1.3718530192618
+Learning rate decayed to 0.000194
+Epoch processed within 242.173318s (4min 2s)
+-----------------------------------------------------------------
+Average error for head 1 = 2.6844684833424
+Learning rate decayed to 0.000194
+Epoch processed within 354.309772s (5min 54s)
+-----------------------------------------------------------------
+Average error for head 2 = 2.0072861698667
+Learning rate decayed to 0.000194
+Epoch processed within 483.922265s (8min 3s)
+-----------------------------------------------------------------
+Average error for head 3 = 1.3467103959342
+Learning rate decayed to 0.000194
+Epoch processed within 240.210105s (4min 0s)
+-----------------------------------------------------------------
+Average error for head 1 = 2.6478112962561
+Learning rate decayed to 0.000194
+Epoch processed within 295.55877s (4min 55s)
+-----------------------------------------------------------------
+Average error for head 2 = 2.003249321643
+Learning rate decayed to 0.000194
+Epoch processed within 528.372131s (8min 48s)
+-----------------------------------------------------------------
+Average error for head 3 = 1.3222977629874
+Learning rate decayed to 0.000194
+Epoch processed within 256.455722s (4min 16s)
+-----------------------------------------------------------------
+Average error for head 1 = 2.6125577537305
+Learning rate decayed to 0.000194
+Epoch processed within 345.897308s (5min 45s)
+-----------------------------------------------------------------
+Average error for head 2 = 1.9990362269839
+Learning rate decayed to 0.000194
+Epoch processed within 444.641484s (7min 24s)
+-----------------------------------------------------------------
+Average error for head 3 = 1.29814293138
+Learning rate decayed to 0.000194
+Epoch processed within 241.455806s (4min 1s)
+-----------------------------------------------------------------
+Average error for head 1 = 2.5800954943366
+Learning rate decayed to 0.000194
+Epoch processed within 326.060534s (5min 26s)
+-----------------------------------------------------------------
+Average error for head 2 = 1.9955529270781
+Learning rate decayed to 0.000194
+Epoch processed within 473.640539s (7min 53s)
+-----------------------------------------------------------------
+Average error for head 3 = 1.2740879618604
+Learning rate decayed to 0.000194
+Epoch processed within 230.677526s (3min 50s)
+-----------------------------------------------------------------
+Average error for head 1 = 2.5518658771505
+Learning rate decayed to 0.000194
+Epoch processed within 299.155505s (4min 59s)
+-----------------------------------------------------------------
+Average error for head 2 = 1.9940566976513
+Learning rate decayed to 0.000194
+Epoch processed within 497.541027s (8min 17s)
+-----------------------------------------------------------------
+Average error for head 3 = 1.2501711480986
+Learning rate decayed to 0.000194
+Epoch processed within 239.825909s (3min 59s)
+-----------------------------------------------------------------
+Average error for head 1 = 2.5286892805923
+Learning rate decayed to 0.000194
+Epoch processed within 345.810818s (5min 45s)
+-----------------------------------------------------------------
+Average error for head 2 = 1.9953727378218
+Learning rate decayed to 0.000194
+Epoch processed within 516.249224s (8min 36s)
+-----------------------------------------------------------------
+Average error for head 3 = 1.2266375025579
+Learning rate decayed to 0.000194
+Epoch processed within 285.09019s (4min 45s)
+-----------------------------------------------------------------
+Average error for head 1 = 2.5106394180174
+Learning rate decayed to 0.000194
+Epoch processed within 339.17047s (5min 39s)
+-----------------------------------------------------------------
+Average error for head 2 = 1.9994964223122
+Learning rate decayed to 0.000194
+Epoch processed within 495.664565s (8min 15s)
+-----------------------------------------------------------------
+Average error for head 3 = 1.2039203706688
+Learning rate decayed to 0.000194
+Epoch processed within 249.54204s (4min 9s)
+-----------------------------------------------------------------
+Average error for head 1 = 2.4971862917131
+Learning rate decayed to 0.000194
+Epoch processed within 331.494639s (5min 31s)
+-----------------------------------------------------------------
+Average error for head 2 = 2.0058381421647
+Learning rate decayed to 0.000194
+Epoch processed within 465.096389s (7min 45s)
+-----------------------------------------------------------------
+Average error for head 3 = 1.1825969834141
+Learning rate decayed to 0.000194
+Epoch processed within 267.943645s (4min 27s)
+-----------------------------------------------------------------
+Average error for head 1 = 2.487482874862
+Learning rate decayed to 0.000194
+Epoch processed within 358.453234s (5min 58s)
+-----------------------------------------------------------------
+Average error for head 2 = 2.0136850219417
+Learning rate decayed to 0.000194
+Epoch processed within 459.068787s (7min 39s)
+-----------------------------------------------------------------
+Average error for head 3 = 1.1632407540969
+Learning rate decayed to 0.000194
+Epoch processed within 244.683935s (4min 4s)
+-----------------------------------------------------------------
+Average error for head 1 = 2.480663340953
+Learning rate decayed to 0.000194
+Epoch processed within 338.75286s (5min 38s)
+-----------------------------------------------------------------
+Average error for head 2 = 2.0225213006016
+Learning rate decayed to 0.000194
+Epoch processed within 495.650419s (8min 15s)
+-----------------------------------------------------------------
+Average error for head 3 = 1.1461795624354
+Learning rate decayed to 0.000194
+Epoch processed within 249.413304s (4min 9s)
+-----------------------------------------------------------------
+Average error for head 1 = 2.4759060652871
+Learning rate decayed to 0.000194
+Epoch processed within 294.474381s (4min 54s)
+-----------------------------------------------------------------
+Average error for head 2 = 2.0321074014912
+Learning rate decayed to 0.000194
+Epoch processed within 411.280313s (6min 51s)
+-----------------------------------------------------------------
+Average error for head 3 = 1.13134133478
+Learning rate decayed to 0.000194
+Epoch processed within 220.027068s (3min 40s)
+-----------------------------------------------------------------
+Average error for head 1 = 2.472283173699
+Learning rate decayed to 0.000194
+Epoch processed within 311.602749s (5min 11s)
+-----------------------------------------------------------------
+Average error for head 2 = 2.0423177312223
+Learning rate decayed to 0.000194
+Epoch processed within 432.269724s (7min 12s)
+-----------------------------------------------------------------
+Average error for head 3 = 1.1182897820292
+Learning rate decayed to 0.000194
+Epoch processed within 209.959474s (3min 29s)
+-----------------------------------------------------------------
+Average error for head 1 = 2.4686975763672
+Learning rate decayed to 0.000194
+Epoch processed within 273.904164s (4min 33s)
+-----------------------------------------------------------------
+Average error for head 2 = 2.0529042718366
+Learning rate decayed to 0.000194
+Epoch processed within 431.186555s (7min 11s)
+-----------------------------------------------------------------
+Average error for head 3 = 1.1063300872564
+Learning rate decayed to 0.000194
+Epoch processed within 238.465483s (3min 58s)
+-----------------------------------------------------------------
+Average error for head 1 = 2.4640367737
+Learning rate decayed to 0.000194
+Epoch processed within 313.48135s (5min 13s)
+-----------------------------------------------------------------
+Average error for head 2 = 2.0634268951274
+Learning rate decayed to 0.000194
+Epoch processed within 496.045038s (8min 16s)
+-----------------------------------------------------------------
+Average error for head 3 = 1.0946006288436
+Learning rate decayed to 0.000194
+Epoch processed within 258.156582s (4min 18s)
+-----------------------------------------------------------------
+Average error for head 1 = 2.4573824614126
+Learning rate decayed to 0.000194
+Epoch processed within 318.162144s (5min 18s)
+-----------------------------------------------------------------
+Average error for head 2 = 2.0733834388973
+Learning rate decayed to 0.000194
+Epoch processed within 475.809366s (7min 55s)
+-----------------------------------------------------------------
+Average error for head 3 = 1.0822083263619
+Learning rate decayed to 0.000194
+Epoch processed within 273.298494s (4min 33s)
+-----------------------------------------------------------------
+Average error for head 1 = 2.4481354734901
+Learning rate decayed to 0.000194
+Epoch processed within 380.67523s (6min 20s)
+-----------------------------------------------------------------
+Average error for head 2 = 2.082329225125
+Learning rate decayed to 0.000194
+Epoch processed within 517.389026s (8min 37s)
+-----------------------------------------------------------------
+Average error for head 3 = 1.0684257156555
+Learning rate decayed to 0.000194
+Epoch processed within 241.54403s (4min 1s)
+-----------------------------------------------------------------
+Average error for head 1 = 3.3685781555555
+Learning rate decayed to 0.000194
+Epoch processed within 398.164341s (6min 38s)
+-----------------------------------------------------------------
+Average error for head 2 = 3.4486540148898
+Learning rate decayed to 0.000194
+Epoch processed within 486.858808s (8min 6s)
+-----------------------------------------------------------------
+Average error for head 3 = 3.183773609661
+Learning rate decayed to 0.000194
+Epoch processed within 280.566082s (4min 40s)
+-----------------------------------------------------------------
+Average error for head 1 = 3.152339740083
+Learning rate decayed to 0.000194
+Epoch processed within 482.365579s (8min 2s)
+-----------------------------------------------------------------
+Average error for head 2 = 2.771623004622
+Learning rate decayed to 0.000194
+Epoch processed within 505.493723s (8min 25s)
+-----------------------------------------------------------------
+Average error for head 3 = 2.7004567720193
+Learning rate decayed to 0.000194
+Epoch processed within 201.400221s (3min 21s)
+-----------------------------------------------------------------
+Average error for head 1 = 3.1800654340598
+Learning rate decayed to 0.000194
+Epoch processed within 257.111085s (4min 17s)
+-----------------------------------------------------------------
+Average error for head 1 = 3.3880780668511
+Learning rate decayed to 0.000194
+Epoch processed within 324.561532s (5min 24s)
+-----------------------------------------------------------------
+Average error for head 2 = 3.3896626007345
+Learning rate decayed to 0.000194
+Epoch processed within 532.783334s (8min 52s)
+-----------------------------------------------------------------
+Average error for head 3 = 3.1912067253639
+Learning rate decayed to 0.000194
+Epoch processed within 268.766815s (4min 28s)
+-----------------------------------------------------------------
+Average error for head 1 = 3.1885279808906
+Learning rate decayed to 0.000194
+Epoch processed within 354.886646s (5min 54s)
+-----------------------------------------------------------------
+Average error for head 2 = 2.649502088323
+Learning rate decayed to 0.000194
+Epoch processed within 504.654895s (8min 24s)
+-----------------------------------------------------------------
+Average error for head 3 = 2.776065302401
+Learning rate decayed to 0.000194
+Epoch processed within 263.251018s (4min 23s)
+-----------------------------------------------------------------
+Average error for head 1 = 3.1498879015899
+Learning rate decayed to 0.000194
+Epoch processed within 358.696334s (5min 58s)
+-----------------------------------------------------------------
+Average error for head 2 = 2.2423393066954
+Learning rate decayed to 0.000194
+Epoch processed within 499.264598s (8min 19s)
+-----------------------------------------------------------------
+Average error for head 3 = 2.5293611499847
+Learning rate decayed to 0.000194
+Epoch processed within 261.055522s (4min 21s)
+-----------------------------------------------------------------
+Average error for head 1 = 3.0860064537208
+Learning rate decayed to 0.000194
+Epoch processed within 355.997894s (5min 55s)
+-----------------------------------------------------------------
+Average error for head 2 = 2.0489051891043
+Learning rate decayed to 0.000194
+Epoch processed within 497.016593s (8min 17s)
+-----------------------------------------------------------------
+Average error for head 3 = 2.4141441380047
+Learning rate decayed to 0.000194
+Epoch processed within 281.480468s (4min 41s)
+-----------------------------------------------------------------
+Average error for head 1 = 3.0531201284833
+Learning rate decayed to 0.000194
+Epoch processed within 358.860671s (5min 58s)
+-----------------------------------------------------------------
+Average error for head 2 = 1.9884500613252
+Learning rate decayed to 0.000194
+Epoch processed within 487.664665s (8min 7s)
+-----------------------------------------------------------------
+Average error for head 3 = 2.3038517248479
+Learning rate decayed to 0.000194
+Epoch processed within 243.259066s (4min 3s)
+-----------------------------------------------------------------
+Average error for head 1 = 3.0463563521719
+Learning rate decayed to 0.000194
+Epoch processed within 336.89526s (5min 36s)
+-----------------------------------------------------------------
+Average error for head 2 = 1.9622111633597
+Learning rate decayed to 0.000194
+Epoch processed within 460.10297s (7min 40s)
+-----------------------------------------------------------------
+Average error for head 3 = 2.1787796018679
+Learning rate decayed to 0.000194
+Epoch processed within 189.35359s (3min 9s)
+-----------------------------------------------------------------
+Average error for head 1 = 3.0404413728388
+Learning rate decayed to 0.000194
+Epoch processed within 254.971391s (4min 14s)
+-----------------------------------------------------------------
+Average error for head 2 = 1.9390238374099
+Learning rate decayed to 0.000194
+Epoch processed within 358.821178s (5min 58s)
+-----------------------------------------------------------------
+Average error for head 3 = 2.0585725358705
+Learning rate decayed to 0.000194
+Epoch processed within 183.974654s (3min 3s)
+-----------------------------------------------------------------
+Average error for head 1 = 3.034754425924
+Learning rate decayed to 0.000194
+Epoch processed within 253.050994s (4min 13s)
+-----------------------------------------------------------------
+Average error for head 2 = 1.9171705874695
+Learning rate decayed to 0.000194
+Epoch processed within 383.126159s (6min 23s)
+-----------------------------------------------------------------
+Average error for head 3 = 1.9476337162632
+Learning rate decayed to 0.000194
+Epoch processed within 180.114208s (3min 0s)
+-----------------------------------------------------------------
+Average error for head 1 = 3.0225511220683
+Learning rate decayed to 0.000194
+Epoch processed within 252.882764s (4min 12s)
+-----------------------------------------------------------------
+Average error for head 2 = 1.8930211632076
+Learning rate decayed to 0.000194
+Epoch processed within 360.815857s (6min 0s)
+-----------------------------------------------------------------
+Average error for head 3 = 1.8421952784922
+Learning rate decayed to 0.000194
+Epoch processed within 185.704308s (3min 5s)
+-----------------------------------------------------------------
+Average error for head 1 = 2.9995753242516
+Learning rate decayed to 0.000194
+Epoch processed within 251.379597s (4min 11s)
+-----------------------------------------------------------------
+Average error for head 2 = 1.8639595550544
+Learning rate decayed to 0.000194
+Epoch processed within 356.042263s (5min 56s)
+-----------------------------------------------------------------
+Average error for head 3 = 1.7438646216084
+Learning rate decayed to 0.000194
+Epoch processed within 194.823878s (3min 14s)
+-----------------------------------------------------------------
+Average error for head 1 = 2.966627685041
+Learning rate decayed to 0.000194
+Epoch processed within 245.888266s (4min 5s)
+-----------------------------------------------------------------
+Average error for head 2 = 1.831192349648
+Learning rate decayed to 0.000194
+Epoch processed within 358.467442s (5min 58s)
+-----------------------------------------------------------------
+Average error for head 3 = 1.6583047351871
+Learning rate decayed to 0.000194
+Epoch processed within 180.670125s (3min 0s)
+-----------------------------------------------------------------
+Average error for head 1 = 2.9271841427813
+Learning rate decayed to 0.000194
+Epoch processed within 261.126285s (4min 21s)
+-----------------------------------------------------------------
+Average error for head 2 = 1.8000867129189
+Learning rate decayed to 0.000194
+Epoch processed within 448.343397s (7min 28s)
+-----------------------------------------------------------------
+Average error for head 3 = 1.5882379143372
+Learning rate decayed to 0.000194
+Epoch processed within 231.387272s (3min 51s)
+-----------------------------------------------------------------
+Average error for head 1 = 2.8860833752001
+Learning rate decayed to 0.000194
+Epoch processed within 316.163166s (5min 16s)
+-----------------------------------------------------------------
+Average error for head 2 = 1.7759803393065
+Learning rate decayed to 0.000194
+Epoch processed within 467.943684s (7min 47s)
+-----------------------------------------------------------------
+Average error for head 3 = 1.5317815506893
+Learning rate decayed to 0.000194
+Epoch processed within 247.668515s (4min 7s)
+-----------------------------------------------------------------
+Average error for head 1 = 2.8476152240001
+Learning rate decayed to 0.000194
+Epoch processed within 330.349618s (5min 30s)
+-----------------------------------------------------------------
+Average error for head 2 = 1.7607927003982
+Learning rate decayed to 0.000194
+Epoch processed within 481.536321s (8min 1s)
+-----------------------------------------------------------------
+Average error for head 3 = 1.4848731196332
+Learning rate decayed to 0.000194
+Epoch processed within 247.790054s (4min 7s)
+-----------------------------------------------------------------
+Average error for head 1 = 2.8129582594139
+Learning rate decayed to 0.000194
+Epoch processed within 311.068606s (5min 11s)
+-----------------------------------------------------------------
+Average error for head 2 = 1.7542148675736
+Learning rate decayed to 0.000194
+Epoch processed within 466.912635s (7min 46s)
+-----------------------------------------------------------------
+Average error for head 3 = 1.4436531859442
+Learning rate decayed to 0.000194
+Epoch processed within 264.176074s (4min 24s)
+-----------------------------------------------------------------
+Average error for head 1 = 2.7806430383395
+Learning rate decayed to 0.000194
+Epoch processed within 346.013329s (5min 46s)
+-----------------------------------------------------------------
+Average error for head 2 = 1.7544312986318
+Learning rate decayed to 0.000194
+Epoch processed within 453.759764s (7min 33s)
+-----------------------------------------------------------------
+Average error for head 3 = 1.4053736273759
+Learning rate decayed to 0.000194
+Epoch processed within 234.979785s (3min 54s)
+-----------------------------------------------------------------
+Average error for head 1 = 2.7486425132182
+Learning rate decayed to 0.000194
+Epoch processed within 334.937825s (5min 34s)
+-----------------------------------------------------------------
+Average error for head 2 = 1.757859688576
+Learning rate decayed to 0.000194
+Epoch processed within 457.370801s (7min 37s)
+-----------------------------------------------------------------
+Average error for head 3 = 1.3686295184716
+Learning rate decayed to 0.000194
+Epoch processed within 229.972686s (3min 49s)
+-----------------------------------------------------------------
+Average error for head 1 = 2.715642326993
+Learning rate decayed to 0.000194
+Epoch processed within 307.416738s (5min 7s)
+-----------------------------------------------------------------
+Average error for head 2 = 1.7608719395547
+Learning rate decayed to 0.000194
+Epoch processed within 457.479577s (7min 37s)
+-----------------------------------------------------------------
+Average error for head 3 = 1.3332339219745
+Learning rate decayed to 0.000194
+Epoch processed within 235.518002s (3min 55s)
+-----------------------------------------------------------------
+Average error for head 1 = 2.6812317343315
+Learning rate decayed to 0.000194
+Epoch processed within 311.234205s (5min 11s)
+-----------------------------------------------------------------
+Average error for head 2 = 1.7622235721216
+Learning rate decayed to 0.000194
+Epoch processed within 462.830751s (7min 42s)
+-----------------------------------------------------------------
+Average error for head 3 = 1.2996409830807
+Learning rate decayed to 0.000194
+Epoch processed within 228.09473s (3min 48s)
+-----------------------------------------------------------------
+Average error for head 1 = 2.645751583894
+Learning rate decayed to 0.000194
+Epoch processed within 331.772382s (5min 31s)
+-----------------------------------------------------------------
+Average error for head 2 = 1.7633052962848
+Learning rate decayed to 0.000194
+Epoch processed within 452.35775s (7min 32s)
+-----------------------------------------------------------------
+Average error for head 3 = 1.2683485515929
+Learning rate decayed to 0.000194
+Epoch processed within 254.770235s (4min 14s)
+-----------------------------------------------------------------
+Average error for head 1 = 2.6098337923519
+Learning rate decayed to 0.000194
+Epoch processed within 336.068781s (5min 36s)
+-----------------------------------------------------------------
+Average error for head 2 = 1.7661392196904
+Learning rate decayed to 0.000194
+Epoch processed within 483.224203s (8min 3s)
+-----------------------------------------------------------------
+Average error for head 3 = 1.2397090693095
+Learning rate decayed to 0.000194
+Epoch processed within 271.402798s (4min 31s)
+-----------------------------------------------------------------
+Average error for head 1 = 2.573826678721
+Learning rate decayed to 0.000194
+Epoch processed within 354.061608s (5min 54s)
+-----------------------------------------------------------------
+Average error for head 2 = 1.7716184872955
+Learning rate decayed to 0.000194
+Epoch processed within 478.011224s (7min 58s)
+-----------------------------------------------------------------
+Average error for head 3 = 1.2138658750857
+Learning rate decayed to 0.000194
+Epoch processed within 229.363312s (3min 49s)
+-----------------------------------------------------------------
+Average error for head 1 = 2.5378306707666
+Learning rate decayed to 0.000194
+Epoch processed within 321.734136s (5min 21s)
+-----------------------------------------------------------------
+Average error for head 2 = 1.7795284276747
+Learning rate decayed to 0.000194
+Epoch processed within 470.744514s (7min 50s)
+-----------------------------------------------------------------
+Average error for head 3 = 1.1905671093317
+Learning rate decayed to 0.000194
+Epoch processed within 233.83188s (3min 53s)
+-----------------------------------------------------------------
+Average error for head 1 = 2.5020867036344
+Learning rate decayed to 0.000194
+Epoch processed within 333.420312s (5min 33s)
+-----------------------------------------------------------------
+Average error for head 2 = 1.7892559187161
+Learning rate decayed to 0.000194
+Epoch processed within 447.158998s (7min 27s)
+-----------------------------------------------------------------
+Average error for head 3 = 1.1690865202827
+Learning rate decayed to 0.000194
+Epoch processed within 247.079218s (4min 7s)
+-----------------------------------------------------------------
+Average error for head 1 = 2.4670711411514
+Learning rate decayed to 0.000194
+Epoch processed within 333.265695s (5min 33s)
+-----------------------------------------------------------------
+Average error for head 2 = 1.800050834902
+Learning rate decayed to 0.000194
+Epoch processed within 465.184798s (7min 45s)
+-----------------------------------------------------------------
+Average error for head 3 = 1.1484472829515
+Learning rate decayed to 0.000194
+Epoch processed within 253.159371s (4min 13s)

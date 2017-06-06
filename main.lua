@@ -55,10 +55,11 @@ local rnn=RNN.unfoldModel(model,seq_size)
 
 for i=1,100 do
 RNN.trainUnfoldedModel(rnn,0.0002,data1,1)
-RNN.trainUnfoldedModel(rnn,0.0002,data2,2)
-RNN.trainUnfoldedModel(rnn,0.0002,data3,3)
 print("1-----"..generateText(rnn,TP.enAlphabet,100,"seed",1))
+RNN.trainUnfoldedModel(rnn,0.0002,data2,2)
 print("2-----"..generateText(rnn,TP.enAlphabet,100,"seed",2))
+RNN.trainUnfoldedModel(rnn,0.0002,data3,3)
 print("3-----"..generateText(rnn,TP.enAlphabet,100,"seed",3))
+if i%5==0 then RNN.makeSnapshot(rnn) end
 end
 

@@ -176,6 +176,17 @@ log:write("Epoch processed within "..clock.."s ("..(math.floor(clock/60)).."min 
 log:close()
 end
 
+function RNN.makeSnapshot(rnn)
+	local path="./snapshots/"..os.time()..".rnn"
+	torch.save(path,rnn)
+	print("Snapshot saved at "..path)
+end
+
+function RNN.loadSnapshot(name)
+	local path="./snapshots/"..name
+	local rnn=torch.load(path)
+	return rnn
+end
 
 
 return RNN

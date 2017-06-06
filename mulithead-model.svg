@@ -26,9 +26,9 @@
 <g id="a_node2"><a xlink:title="[[C]]:&#45;1_">
 <ellipse fill="none" stroke="black" cx="614.643" cy="-48.0833" rx="208.693" ry="48.1667"/>
 <text text-anchor="middle" x="614.643" y="-66.8833" font-family="Times,serif" font-size="14.00">Node2</text>
-<text text-anchor="start" x="475.143" y="-51.8833" font-family="Times,serif" font-size="14.00">input = {}</text>
+<text text-anchor="start" x="475.143" y="-51.8833" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
 <text text-anchor="start" x="475.143" y="-36.8833" font-family="Times,serif" font-size="14.00">mapindex = {Node1,Node3,Node4,Node5,Node6}</text>
-<text text-anchor="middle" x="614.643" y="-21.8833" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="middle" x="614.643" y="-21.8833" font-family="Times,serif" font-size="14.00">input = {}</text>
 </a>
 </g>
 </g>
@@ -139,8 +139,8 @@
 <ellipse fill="none" stroke="black" cx="314.643" cy="-841.082" rx="128.887" ry="48.1667"/>
 <text text-anchor="middle" x="314.643" y="-859.882" font-family="Times,serif" font-size="14.00">Node7</text>
 <text text-anchor="start" x="231.643" y="-844.882" font-family="Times,serif" font-size="14.00">module = nn.CAddTable</text>
-<text text-anchor="start" x="231.643" y="-829.882" font-family="Times,serif" font-size="14.00">mapindex = {Node9,Node10}</text>
-<text text-anchor="middle" x="314.643" y="-814.882" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="start" x="231.643" y="-829.882" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="middle" x="314.643" y="-814.882" font-family="Times,serif" font-size="14.00">mapindex = {Node9,Node10}</text>
 </a>
 </g>
 </g>
@@ -155,8 +155,8 @@
 <ellipse fill="none" stroke="black" cx="619.643" cy="-465.796" rx="133.787" ry="48.1667"/>
 <text text-anchor="middle" x="619.643" y="-484.596" font-family="Times,serif" font-size="14.00">Node8</text>
 <text text-anchor="start" x="533.143" y="-469.596" font-family="Times,serif" font-size="14.00">module = nn.CAddTable</text>
-<text text-anchor="start" x="533.143" y="-454.596" font-family="Times,serif" font-size="14.00">mapindex = {Node11,Node12}</text>
-<text text-anchor="middle" x="619.643" y="-439.596" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="start" x="533.143" y="-454.596" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="middle" x="619.643" y="-439.596" font-family="Times,serif" font-size="14.00">mapindex = {Node11,Node12}</text>
 </a>
 </g>
 </g>
@@ -268,9 +268,9 @@
 <g id="a_node16"><a xlink:title="[[C]]:&#45;1_&#45;1">
 <ellipse fill="none" stroke="black" cx="190.643" cy="-1216.37" rx="77.5641" ry="48.1667"/>
 <text text-anchor="middle" x="190.643" y="-1235.17" font-family="Times,serif" font-size="14.00">Node16</text>
-<text text-anchor="start" x="143.643" y="-1220.17" font-family="Times,serif" font-size="14.00">input = {}</text>
-<text text-anchor="start" x="143.643" y="-1205.17" font-family="Times,serif" font-size="14.00">selectindex = 1</text>
-<text text-anchor="middle" x="190.643" y="-1190.17" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="start" x="143.643" y="-1220.17" font-family="Times,serif" font-size="14.00">selectindex = 1</text>
+<text text-anchor="start" x="143.643" y="-1205.17" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="middle" x="190.643" y="-1190.17" font-family="Times,serif" font-size="14.00">input = {}</text>
 </a>
 </g>
 </g>
@@ -284,9 +284,9 @@
 <g id="a_node17"><a xlink:title="[[C]]:&#45;1_&#45;2">
 <ellipse fill="none" stroke="black" cx="388.643" cy="-1216.37" rx="77.5641" ry="48.1667"/>
 <text text-anchor="middle" x="388.643" y="-1235.17" font-family="Times,serif" font-size="14.00">Node17</text>
-<text text-anchor="start" x="341.643" y="-1220.17" font-family="Times,serif" font-size="14.00">input = {}</text>
-<text text-anchor="start" x="341.643" y="-1205.17" font-family="Times,serif" font-size="14.00">selectindex = 2</text>
-<text text-anchor="middle" x="388.643" y="-1190.17" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="start" x="341.643" y="-1220.17" font-family="Times,serif" font-size="14.00">selectindex = 2</text>
+<text text-anchor="start" x="341.643" y="-1205.17" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="middle" x="388.643" y="-1190.17" font-family="Times,serif" font-size="14.00">input = {}</text>
 </a>
 </g>
 </g>
@@ -300,9 +300,9 @@
 <g id="a_node18"><a xlink:title="[[C]]:&#45;1_&#45;3">
 <ellipse fill="none" stroke="black" cx="593.643" cy="-1216.37" rx="77.5641" ry="48.1667"/>
 <text text-anchor="middle" x="593.643" y="-1235.17" font-family="Times,serif" font-size="14.00">Node18</text>
-<text text-anchor="start" x="546.643" y="-1220.17" font-family="Times,serif" font-size="14.00">input = {}</text>
-<text text-anchor="start" x="546.643" y="-1205.17" font-family="Times,serif" font-size="14.00">selectindex = 3</text>
-<text text-anchor="middle" x="593.643" y="-1190.17" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="start" x="546.643" y="-1220.17" font-family="Times,serif" font-size="14.00">selectindex = 3</text>
+<text text-anchor="start" x="546.643" y="-1205.17" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="middle" x="593.643" y="-1190.17" font-family="Times,serif" font-size="14.00">input = {}</text>
 </a>
 </g>
 </g>
@@ -316,8 +316,8 @@
 <g id="a_node19"><a xlink:title="[[C]]:&#45;1_ split at [...e/marcin/torch/install/share/lua/5.3/nngraph/gmodule.lua]:96&#45;mnode">
 <ellipse fill="none" stroke="black" cx="388.643" cy="-1337.93" rx="80.7205" ry="37.4533"/>
 <text text-anchor="middle" x="388.643" y="-1349.23" font-family="Times,serif" font-size="14.00">Node19</text>
-<text text-anchor="start" x="339.643" y="-1334.23" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
-<text text-anchor="middle" x="388.643" y="-1319.23" font-family="Times,serif" font-size="14.00">nSplitOutputs = 3</text>
+<text text-anchor="start" x="339.643" y="-1334.23" font-family="Times,serif" font-size="14.00">nSplitOutputs = 3</text>
+<text text-anchor="middle" x="388.643" y="-1319.23" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
 </a>
 </g>
 </g>
@@ -341,8 +341,8 @@
 <g id="a_node20"><a xlink:title="[[C]]:&#45;1_">
 <ellipse fill="none" stroke="black" cx="388.643" cy="-1448.88" rx="77.5641" ry="37.4533"/>
 <text text-anchor="middle" x="388.643" y="-1460.18" font-family="Times,serif" font-size="14.00">Node20</text>
-<text text-anchor="start" x="341.643" y="-1445.18" font-family="Times,serif" font-size="14.00">input = {}</text>
-<text text-anchor="middle" x="388.643" y="-1430.18" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="start" x="341.643" y="-1445.18" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
+<text text-anchor="middle" x="388.643" y="-1430.18" font-family="Times,serif" font-size="14.00">input = {}</text>
 </a>
 </g>
 </g>
