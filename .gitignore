@@ -1,4 +1,3 @@
-#ignore all binaries and processed text
 *.pyc
 data/reduced_authors/
 data/binary_authors/
