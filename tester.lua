@@ -79,11 +79,11 @@ local unknown=TP.convertFileIntoData('data/unknown',TP.enAlphabet)
 
 
 print("--------Text generated for head 1------------")
-print(generateText(rnn,TP.enAlphabet,1000,"someseed",1))
+print(generateText(rnn,TP.enAlphabet,100,"someseed",1))
 print("--------Text generated for head 2------------")
-print(generateText(rnn,TP.enAlphabet,1000,"someseed",2))
+print(generateText(rnn,TP.enAlphabet,100,"someseed",2))
 print("--------Text generated for head 3------------")
-print(generateText(rnn,TP.enAlphabet,1000,"someseed",3))
+print(generateText(rnn,TP.enAlphabet,100,"someseed",3))
 
 
 print("Head 1 matches its data at rate: ",getMatchRate(rnn,data1,1))

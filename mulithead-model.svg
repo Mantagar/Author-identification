@@ -27,8 +27,8 @@
 <ellipse fill="none" stroke="black" cx="614.643" cy="-48.0833" rx="208.693" ry="48.1667"/>
 <text text-anchor="middle" x="614.643" y="-66.8833" font-family="Times,serif" font-size="14.00">Node2</text>
 <text text-anchor="start" x="475.143" y="-51.8833" font-family="Times,serif" font-size="14.00">reverseMap = {}</text>
-<text text-anchor="start" x="475.143" y="-36.8833" font-family="Times,serif" font-size="14.00">mapindex = {Node1,Node3,Node4,Node5,Node6}</text>
-<text text-anchor="middle" x="614.643" y="-21.8833" font-family="Times,serif" font-size="14.00">input = {}</text>
+<text text-anchor="start" x="475.143" y="-36.8833" font-family="Times,serif" font-size="14.00">input = {}</text>
+<text text-anchor="middle" x="614.643" y="-21.8833" font-family="Times,serif" font-size="14.00">mapindex = {Node1,Node3,Node4,Node5,Node6}</text>
 </a>
 </g>
 </g>

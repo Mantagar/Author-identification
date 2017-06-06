@@ -1,9 +1,11 @@
 torch.setnumthreads(1) --after reinstalling torch script slowed 10 times, it brings back performance to about 2 times the time before upgrade
-local TP=require 'text_processor.lua'
+local TP=require 'data/text_processor.lua'
 
-local data1=TP.convertFileIntoData('data/author1',TP.enAlphabet)
-local data2=TP.convertFileIntoData('data/author2',TP.enAlphabet)
-local data3=TP.convertFileIntoData('data/author3',TP.enAlphabet)
+--assuming they were prepared earlier
+local data1=torch.load('data/binary_authors/author1')[1]
+local data2=torch.load('data/binary_authors/author2')[1]
+local data3=torch.load('data/binary_authors/author3')[1]
+--local data3=TP.convertFileIntoData('data/author3',TP.enAlphabet)
 
 
 function generateText(rnn,alphabet,length,seed,head)

@@ -11,7 +11,7 @@ digraph G {
 		tooltip="[/home/marcin/torch/install/share/lua/5.3/nngraph/init.lua]:76_",
 		width=3.7123];
 	n2	 [height=1.3356,
-		label="Node2\nreverseMap = {}\lmapindex = {Node1,Node3,Node4,Node5,Node6}\linput = {}",
+		label="Node2\nreverseMap = {}\linput = {}\lmapindex = {Node1,Node3,Node4,Node5,Node6}",
 		pos="614.64,48.083",
 		tooltip="[[C]]:-1_",
 		width=5.7943];
