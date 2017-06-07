@@ -36,14 +36,13 @@ do
 done
 
 echo -e "\e[32;2;1mConverting mapped files to tensor data\e[0m"
-counter=1
-for author in $reduced/*
+
+for author in `ls $reduced`
 do
-	torch_file="$binary/author$counter"
-	echo "Converting $author/* ---> $torch_file"
-	for document in "$author/*"
+	torch_file="$binary/$author.t7"
+	echo "Converting $reduced/$author/* ---> $torch_file"
+	for document in "$reduced/$author/*"
 	do
 		th serializer.lua $torch_file $document
 	done
-	let counter=counter+1
 done

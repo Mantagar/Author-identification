@@ -28,7 +28,6 @@ function RNN.createModel(input_size,hidden_size,rnn_size,heads)
 	for i=1,heads do
 		output[i]:annotate{name='OUTPUT\nHEAD['..i..']\n', graphAttributes = {style="filled", fillcolor = '#aaffaa'}}
 	end
-	print("INPUT: "..#input,"HIDDEN: "..#hidden,"OUTPUT: "..#output)
 
 	model=nn.gModule(input,output)
 	model.input_size=input_size
@@ -155,24 +154,18 @@ for iteration=1,#data-rnn.seq_size do
 	if iteration%40==0 or iteration==#data-rnn.seq_size then
 		rnn[1]:updateParameters(learning_rate)
 		rnn[1]:zeroGradParameters()
-		--Print error and sample generated text
 		avg_err=0
 		for every=1,#err do avg_err=avg_err+err[every] end
 		avg_err=avg_err/#err
-		--Print error after 1000 iteration
-		if iteration%100==0 then
-			print("Error for head ",head_no,": ",avg_err)
-		end
+		print("Error for head ",head_no,avg_err)
 	end
 end
---Decrease learning rate after each epoch (not here - outside) TODO
-learning_rate=learning_rate*0.97
+
 local clock=os.clock()-time
 local log=io.open("results.txt","a")
 log:write("-----------------------------------------------------------------\n")
 log:write("Average error for head "..head_no.." = "..avg_err.."\n")
-log:write("Learning rate decayed to "..learning_rate.."\n")
-log:write("Epoch processed within "..clock.."s ("..(math.floor(clock/60)).."min "..(math.floor(clock%60)).."s)\n")
+log:write("Document processed within "..clock.."s ("..(math.floor(clock/60)).."min "..(math.floor(clock%60)).."s)\n")
 log:close()
 end
 

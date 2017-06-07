@@ -75,7 +75,6 @@ function TP.convertFileIntoData(filename,alphabet)
 		i=i+1
 	end
 	
-	data.alphabet=alphabet
 	return data
 end
 
