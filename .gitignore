@@ -1,4 +1,6 @@
 *.pyc
+*.svg
+*.dot
 data/reduced_authors/
-data/binary_authors/
+#data/binary_authors/
 

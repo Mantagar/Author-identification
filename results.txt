@@ -256,3 +256,108 @@ Document processed within 550.380409s (9min 10s)
 -----------------------------------------------------------------
 Average error for head 3 = 1.5056504333481
 Document processed within 1141.210936s (19min 1s)
+-----------------------------------------------------------------
+Average error for head 4 = 2.0300403570021
+Document processed within 810.740122s (13min 30s)
+-----------------------------------------------------------------
+Average error for head 4 = 2.1410684716553
+Document processed within 942.80638400001s (15min 42s)
+-----------------------------------------------------------------
+Average error for head 4 = 2.6327395647838
+Document processed within 1725.471357s (28min 45s)
+-----------------------------------------------------------------
+Average error for head 4 = 2.7331326150271
+Document processed within 1191.027683s (19min 51s)
+-----------------------------------------------------------------
+Average error for head 5 = 3.4045280480638
+Document processed within 711.12257399999s (11min 51s)
+-----------------------------------------------------------------
+Average error for head 5 = 2.5004115704951
+Document processed within 797.81052700001s (13min 17s)
+-----------------------------------------------------------------
+Average error for head 5 = 2.6612373854877
+Document processed within 1389.585653s (23min 9s)
+-----------------------------------------------------------------
+Average error for head 5 = 1.7943407219158
+Document processed within 1126.568606s (18min 46s)
+-----------------------------------------------------------------
+Average error for head 6 = 2.7244862125999
+Document processed within 737.315504s (12min 17s)
+-----------------------------------------------------------------
+Average error for head 6 = 1.9909840475812
+Document processed within 715.506954s (11min 55s)
+-----------------------------------------------------------------
+Average error for head 6 = 1.8029897117679
+Document processed within 677.121765s (11min 17s)
+-----------------------------------------------------------------
+Average error for head 7 = 1.8643141022012
+Document processed within 630.75583899999s (10min 30s)
+-----------------------------------------------------------------
+Average error for head 8 = 2.0190902434249
+Document processed within 644.45016000001s (10min 44s)
+-----------------------------------------------------------------
+Average error for head 8 = 2.5456774310444
+Document processed within 648.02397000001s (10min 48s)
+-----------------------------------------------------------------
+Average error for head 9 = 2.2288263440141
+Document processed within 1286.577239s (21min 26s)
+-----------------------------------------------------------------
+Average error for head 9 = 2.6900293444091
+Document processed within 666.78893s (11min 6s)
+-----------------------------------------------------------------
+Average error for head 9 = 2.3017612287927
+Document processed within 500.897952s (8min 20s)
+-----------------------------------------------------------------
+Average error for head 9 = 2.4052075066189
+Document processed within 682.330089s (11min 22s)
+-----------------------------------------------------------------
+Average error for head 10 = 2.4527522195279
+Document processed within 640.59776999999s (10min 40s)
+-----------------------------------------------------------------
+Average error for head 10 = 1.6183087085362
+Document processed within 599.89124300001s (9min 59s)
+-----------------------------------------------------------------
+Average error for head 1 = 2.1220680816393
+Document processed within 697.35484799999s (11min 37s)
+-----------------------------------------------------------------
+Average error for head 1 = 1.9599949972452
+Document processed within 641.948685s (10min 41s)
+-----------------------------------------------------------------
+Average error for head 1 = 2.1100122132308
+Document processed within 592.120328s (9min 52s)
+-----------------------------------------------------------------
+Average error for head 2 = 1.0837515342058
+Document processed within 978.83377s (16min 18s)
+-----------------------------------------------------------------
+Average error for head 3 = 0.75583848521779
+Document processed within 537.29389099999s (8min 57s)
+-----------------------------------------------------------------
+Average error for head 3 = 1.3471996327232
+Document processed within 1242.811703s (20min 42s)
+-----------------------------------------------------------------
+Average error for head 4 = 1.8850553021297
+Document processed within 668.039963s (11min 8s)
+-----------------------------------------------------------------
+Average error for head 4 = 2.145571704561
+Document processed within 869.947201s (14min 29s)
+-----------------------------------------------------------------
+Average error for head 4 = 2.4634831829886
+Document processed within 1494.204848s (24min 54s)
+-----------------------------------------------------------------
+Average error for head 4 = 2.8093108467512
+Document processed within 975.572396s (16min 15s)
+-----------------------------------------------------------------
+Average error for head 5 = 3.3620054770546
+Document processed within 578.48463800001s (9min 38s)
+-----------------------------------------------------------------
+Average error for head 5 = 2.2491547748217
+Document processed within 657.35032299999s (10min 57s)
+-----------------------------------------------------------------
+Average error for head 5 = 2.6206413950905
+Document processed within 1174.44532s (19min 34s)
+-----------------------------------------------------------------
+Average error for head 5 = 1.6875147380216
+Document processed within 959.51811600001s (15min 59s)
+-----------------------------------------------------------------
+Average error for head 6 = 2.7493879695048
+Document processed within 660.53065500001s (11min 0s)
