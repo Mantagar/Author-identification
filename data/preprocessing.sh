@@ -18,8 +18,10 @@ reduced="./reduced_authors"
 map="./mappings/map.py"
 
 echo -e "\e[32;2;1mCleaning workplace directories\e[0m"
-rm -R $binary/*
-rm -R $reduced/*
+rm -R $binary
+rm -R $reduced
+mkdir $binary
+mkdir $reduced
 
 echo -e "\e[32;2;1mMapping files\e[0m"
 for author in `ls $original`
