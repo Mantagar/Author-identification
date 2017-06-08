@@ -26,7 +26,7 @@ local rnn_size=2
 local seq_size=20
 local heads=#authors
 local model=RNN.createModel(isize,hsize,rnn_size,heads)
-graph.dot(model.fg,"multihead-model","mulithead-model")
+--graph.dot(model.fg,"multihead-model","mulithead-model")
 
 local rnn=RNN.unfoldModel(model,seq_size)
 
@@ -40,7 +40,14 @@ for i=1,epochs do
 			RNN.trainUnfoldedModel(rnn,learning_factor,authors[author_no][doc_no],author_no)
 		end
 	end
-if i%5==0 then RNN.makeSnapshot(rnn) end
+if i%5==0 then
+	RNN.makeSnapshot(rnn)
+	local mem=collectgarbage("count")
+	collectgarbage()
+	print("Garbage collector run.")
+	print("Memory before = ",mem)
+	print("Memory after = ",collectgarbage("count"))
+end
 learning_factor=learning_factor*factor_decay
 end
 

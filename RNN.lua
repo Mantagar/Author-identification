@@ -157,7 +157,7 @@ for iteration=1,#data-rnn.seq_size do
 		avg_err=0
 		for every=1,#err do avg_err=avg_err+err[every] end
 		avg_err=avg_err/#err
-		print("Error for head ",head_no,avg_err)
+		if iteration%400==0 then print("Error for head ",head_no,avg_err) end
 	end
 end
 
