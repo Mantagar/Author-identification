@@ -1,11 +1,12 @@
 torch.setnumthreads(1) --after reinstalling torch script slowed 10 times, it brings back performance to about 2 times the time before upgrade
 local TP=require 'data/text_processor.lua'
 
-function getAuthorsData()
+function getAuthorsData(amount)
 	local i=1
 	local authors={}
-	local pfile = io.popen('ls data/binary_authors')
+	local pfile = io.popen('ls data/binary_authors | head -n '..amount)
 	for filename in pfile:lines() do
+		print("Author "..i.."...")
 		authors[i]=torch.load('./data/binary_authors/'..filename)
 		i = i + 1
 	end
@@ -13,8 +14,8 @@ function getAuthorsData()
 	return authors
 end
 print("Loading authors' data...")
-local authors=getAuthorsData()
-print("Loaded "..#authors.." authors")
+local authors=getAuthorsData(20)
+print("All loaded")
 
 require 'nn'
 require 'nngraph'
@@ -32,7 +33,7 @@ local rnn=RNN.unfoldModel(model,seq_size)
 
 local learning_factor=0.0002
 local factor_decay=0.97
-local epochs=25
+local epochs=5
 for i=1,epochs do
 	for author_no=1,#authors do
 		for doc_no=1,#authors[author_no] do
