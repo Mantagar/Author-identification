@@ -21,8 +21,8 @@ require 'nngraph'
 local RNN=require 'RNN'
 
 local isize=#TP.enAlphabet
-local hsize=256
-local rnn_size=2
+local hsize=199
+local rnn_size=1
 local seq_size=20
 local heads=#authors
 local model=RNN.createModel(isize,hsize,rnn_size,heads)
@@ -32,7 +32,7 @@ local rnn=RNN.unfoldModel(model,seq_size)
 
 local learning_factor=0.0002
 local factor_decay=0.97
-local epochs=100
+local epochs=25
 for i=1,epochs do
 	for author_no=1,#authors do
 		for doc_no=1,#authors[author_no] do
@@ -40,14 +40,16 @@ for i=1,epochs do
 			RNN.trainUnfoldedModel(rnn,learning_factor,authors[author_no][doc_no],author_no)
 		end
 	end
-if i%5==0 then
-	RNN.makeSnapshot(rnn)
-	local mem=collectgarbage("count")
-	collectgarbage()
-	print("Garbage collector run.")
-	print("Memory before = ",mem)
-	print("Memory after = ",collectgarbage("count"))
+	if i%5==0 then
+		local mem=collectgarbage("count")
+		collectgarbage()
+		print("Garbage collector run.")
+		print("Memory before = ",mem)
+		print("Memory after = ",collectgarbage("count"))
+	end
+	learning_factor=learning_factor*factor_decay
 end
-learning_factor=learning_factor*factor_decay
-end
+print("Learning finished")
+print("Saving snapshot...")
+RNN.makeSnapshot(rnn)
 

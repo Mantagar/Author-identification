@@ -17,7 +17,6 @@ function RNN.createModel(input_size,hidden_size,rnn_size,heads)
 		output[i]=hidden[rnn_size] - nn.Linear(hidden_size,input_size)-- - nn.SoftMax()
 	end
 	--ANNOTATIONS
-	--TODO remove all ipairs calls, they are terriblly slow
 	for i,each in ipairs(input) do
 			each:annotate{name='HIDDEN STATE[t-1]['..(i-1)..']\n', graphAttributes = {style="filled", fillcolor = '#aaaaff'}}
 	end
@@ -65,11 +64,8 @@ function RNN.unfoldModel(model,seq_size)
 	return rnn
 end
 
---TODO data needs proper format [author->documents] zero gradients should be fed to remaining authors during backpropagation
 --TRAIN UNFOLDED MODEL (one epoch for the chosen author)
 function RNN.trainUnfoldedModel(rnn,learning_rate,data,head_no)
-local avg_err=0;
-local time=os.clock()
 --Zero initial gradient
 rnn[1]:zeroGradParameters()
 --Iterate over every data element, except the last rnn.seq_size (they are the last targets)
@@ -104,7 +100,7 @@ for iteration=1,#data-rnn.seq_size do
 	--Initialize targets (for ClassNLLCriterion instead of providing array we provide the index of one_hot's 1)
 	local target={}
 	for t=1,rnn.seq_size do
-		_,index=data[iteration+t]:max(1) --TODO remove max call, it is 1.5 times slower
+		_,index=data[iteration+t]:max(1)
 		target[t]=index
 	end
 	--Calculate error and gragient loss at every timestep
@@ -154,19 +150,12 @@ for iteration=1,#data-rnn.seq_size do
 	if iteration%40==0 or iteration==#data-rnn.seq_size then
 		rnn[1]:updateParameters(learning_rate)
 		rnn[1]:zeroGradParameters()
-		avg_err=0
+		local avg_err=0
 		for every=1,#err do avg_err=avg_err+err[every] end
 		avg_err=avg_err/#err
-		if iteration%400==0 then print("Error for head ",head_no,avg_err) end
+		print("Error for head ",head_no,avg_err)
 	end
 end
-
-local clock=os.clock()-time
-local log=io.open("results.txt","a")
-log:write("-----------------------------------------------------------------\n")
-log:write("Average error for head "..head_no.." = "..avg_err.."\n")
-log:write("Document processed within "..clock.."s ("..(math.floor(clock/60)).."min "..(math.floor(clock%60)).."s)\n")
-log:close()
 end
 
 function RNN.makeSnapshot(rnn)
