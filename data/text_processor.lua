@@ -68,10 +68,10 @@ function TP.convertFileIntoData(filename,alphabet)
 
 	--pick utf8 char and convert to tensor
 	local data={}
+  data.alphabet=alphabet
 	local i=1
 	for _,c in utf8.codes(text) do
 		data[i]=TP.charToTensor(utf8.char(c),alphabet)
-		--io.write(TP.tensorToChar(data[i],alphabet))
 		i=i+1
 	end
 	

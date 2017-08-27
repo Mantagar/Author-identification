@@ -5,46 +5,40 @@ require 'nngraph'
 local RNN=require 'RNN'
 
 
-function getMatchRate(rnn,data,head)
-	local matched=0;
-	local tests=#data-rnn.seq_size
-	for iteration=1,tests do
-		--Initialize the initial hidden state with zero matrices
-		local hiddenState={}
-		hiddenState[0]={}
+function getMatchRate(rnn,data)
+	local matched=torch.zeros(rnn.heads);
+	--Initialize the initial hidden state with zero matrices
+	local hiddenState={}
+	for r=1,rnn.rnn_size do
+		hiddenState[r]=torch.zeros(rnn.hidden_size)
+	end
+	for iteration=1,#data-1 do
+		input=data[iteration]
+		rnn[1]:forward({input,table.unpack(hiddenState)})
+		--Initialize next hidden state
 		for r=1,rnn.rnn_size do
-			hiddenState[0][r]=torch.zeros(rnn.hidden_size)
+			hiddenState[r]=rnn[1].output[r+rnn.heads]:clone()
 		end
-		--Initialize inputs at consecutive timesteps
-		local input={}
-		for t=1,rnn.seq_size do
-			input[t]=data[iteration+t-1]
-		end
-		--Forward through time
-		for t=1,rnn.seq_size do
-			--Pass input and previous hidden state at timestep t
-			rnn[t]:forward({input[t],table.unpack(hiddenState[t-1])})
-			--Initialize next hidden state
-			hiddenState[t]={}
-			for r=1,rnn.rnn_size do
-				hiddenState[t][r]=rnn[t].output[r+rnn.heads]:clone()
+		if iteration>10 then 
+			--Initialize target
+			local target=data[iteration+1]
+			for h=1,rnn.heads do
+				if TP.tensorToChar(target,TP.enAlphabet)==TP.tensorToChar(rnn[1].output[h],TP.enAlphabet) then matched[h]=matched[h]+1 end
 			end
 		end
-		--Initialize target
-		local target=data[iteration+rnn.seq_size]
-		if TP.tensorToChar(target,TP.enAlphabet)==TP.tensorToChar(rnn[rnn.seq_size].output[head],TP.enAlphabet) then matched=matched+1 end
 	end
-	return matched/tests
+	return matched/(#data-11)
 end
 
-local rnn=RNN.loadSnapshot("1496923741.rnn")
+local rnn=RNN.loadSnapshot("1497116017.rnn")
 
 
-function getAuthorsData()
+function getAuthorsData(amount)
 	local i=1
 	local authors={}
-	local pfile = io.popen('ls data/binary_authors')
+	local pfile = io.popen('ls data/binary_authors | head -n '..amount)
 	for filename in pfile:lines() do
+		print("Author "..i.."...")
 		authors[i]=torch.load('./data/binary_authors/'..filename)
 		i = i + 1
 	end
@@ -52,16 +46,23 @@ function getAuthorsData()
 	return authors
 end
 print("Loading authors' data...")
-local authors=getAuthorsData()
-print("Loaded "..#authors.." authors")
+local authors=getAuthorsData(20)
+print("All loaded")
 
-local unknown=TP.convertFileIntoData("valid1.txt",TP.enAlphabet)
-for i=1,rnn.heads do
-	--print("Match rate for head "..i.." = "..getMatchRate(rnn,unknown,i))
-end
 
 for i=1,#authors do
 	for j=1,#authors[i] do
-		print("Match rate for head "..i.." document "..j.." = "..getMatchRate(rnn,authors[i][j],i))
+		print("Match rates for author "..i.." document "..j.." = ")
+		print(getMatchRate(rnn,authors[i][j]))
 	end
+end
+
+
+local unknown={}
+unknown[1]=TP.convertFileIntoData("valid1.txt",TP.enAlphabet)
+unknown[2]=TP.convertFileIntoData("valid2.txt",TP.enAlphabet)
+unknown[3]=TP.convertFileIntoData("valid3.txt",TP.enAlphabet)
+for i=1,#unknown do
+	print("Match rate for unknown "..i.." = ")
+	print(getMatchRate(rnn,unknown[i]))
 end

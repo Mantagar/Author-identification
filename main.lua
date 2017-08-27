@@ -19,19 +19,21 @@ print("All loaded")
 
 require 'nn'
 require 'nngraph'
+require 'optim'
+
 local RNN=require 'RNN'
 
 local isize=#TP.enAlphabet
 local hsize=199
-local rnn_size=1
+local rnn_size=3
 local seq_size=20
 local heads=#authors
 local model=RNN.createModel(isize,hsize,rnn_size,heads)
---graph.dot(model.fg,"multihead-model","mulithead-model")
+graph.dot(model.fg,"multihead-model","mulithead-model")
 
 local rnn=RNN.unfoldModel(model,seq_size)
 
-local learning_factor=0.0002
+local learning_factor=0.002
 local factor_decay=0.97
 local epochs=5
 for i=1,epochs do
