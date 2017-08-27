@@ -2,5 +2,6 @@
 *.svg
 *.dot
 data/reduced_authors/
-#data/binary_authors/
+Documentation/
+data/binary_authors/
 

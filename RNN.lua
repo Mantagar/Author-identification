@@ -1,6 +1,5 @@
 local RNN={}
 
-require 'optim'
 local BatchManager=require 'BatchManager'
 
 --Creates model of multiheaded reccurent neural network

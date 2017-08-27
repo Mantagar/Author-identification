@@ -1,6 +1,6 @@
 #!/bin/bash
 #This script converts files in ./authors/ into files with reduced alphabet in ./reduced_authors/ and then to torch serialized data of tensors in ./binary_authors/
-#For now it can only process english files TODO expand in the future
+# It expects one argument - language of the texts used, valid options are: -en (English), -es (Spanish), -gr (Greek), -nl (Dutch)
 #Example structure of ./authors/ directory
 #
 #authors/
@@ -11,7 +11,19 @@
 #				Reduta Ordona.txt
 #
 #
-language="en"
+if [ $# -ne 1 ]; then
+	echo -e "\e[31;1mAborting! Expecting exactly one argument.\e[0m"
+	exit
+fi
+case $1 in
+	-en) language="en" ;;
+	-es) language="es" ;;
+	-gr) language="gr" ;;
+	-nl) language="nl" ;;
+	*)
+		echo -e "\e[31;1mAborting! Not a valid argument.\e[0m"
+		exit
+esac
 original="./authors"
 binary="./binary_authors"
 reduced="./reduced_authors"
@@ -43,6 +55,6 @@ do
 	echo "Converting $reduced/$author/* ---> $torch_file"
 	for document in "$reduced/$author/*"
 	do
-		th serializer.lua $torch_file $document
+		th serializer.lua $torch_file $language $document
 	done
 done

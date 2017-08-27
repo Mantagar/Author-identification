@@ -19,11 +19,10 @@ print("All loaded")
 
 require 'nn'
 require 'nngraph'
-require 'optim'
 
 local RNN=require 'RNN'
 
-local isize=#TP.enAlphabet
+local isize=#authors[1][1].alphabet--get size of the first document's alphabet 
 local hsize=199
 local rnn_size=3
 local seq_size=20
