@@ -1,0 +1,152 @@
+% By zmienic jezyk na angielski/polski, dodaj opcje do klasy english lub polish
+\documentclass[polish,12pt]{aghthesis}
+\usepackage[latin2]{inputenc}
+\usepackage{url}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+
+\author{Marcin Radzio}
+
+\titlePL{Weryfikacja autorstwa z wykorzystaniem rekurencyjnych sieci neuronowych}
+\titleEN{Author identification with reccurent neural networks}
+
+\fieldofstudy{Informatyka}
+
+\supervisor{dr \ in¿.\ Marcin Kuta, AGH}
+
+\date{2017}
+
+% Szablon przystosowany jest do druku dwustronnego, 
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+\section{Cel prac i wizja produktu}
+%\section{Project goals and vision}
+\label{sec:cel-wizja}
+\subsection{Charakterystyka problemu}
+Zadanie weryfikacji autorstwa polega na zdeterminowaniu, czy autor ma³ego zbioru
+znanych tekstów jest tak¿e autorem pewnego kwestionowanego tekstu. Zadanie to zosta³o zdefiniowane w ten sposób w konkursie PAN 2015, a jednym z zaproponowanych rozwi±zañ by³o wykorzystanie wielog³owych, rekurencyjnych sieci neuronowych, autorstwa Douglasa Bagnalla. Rozwi±zanie to okaza³o siê szczególnie efektywne w warunkach konkursu, choæ w praktyce zastosowanie takiego podej¶cia mo¿e siê nie sprawdziæ.
+\subsection{Motywacja projektu}
+W ostatnich latach mogli¶my do¶wiadczyæ ogromnego postêpu w dziedzinie uczenia maszynowego, a przede wszystkim w ¶wiecie sieci neuronowych. Powsta³o wiele zaawansowanych frameworków (Torch, Theano, TensorFlow), które pozwoli³y na ³atwe tworzenie nawet skomplikowanych sieci, wci±¿ zapewniaj±c szybk± naukê i kontrolê nad jej przebiegiem. Wraz z nimi pojawi³y siê biblioteki dedykowane dla pewnych zastosowañ, jak 'torch-rnn', który daje mo¿liwo¶æ uczenia rekurencyjnych sieci neuronowych dla znakowego modelu jêzykowego (character level language model RNN). Jednak¿e wci±¿ brakuje bibliotek, które pozwoli³yby na trenowanie sieci dla zadania weryfikacji autorstwa tekstu pisanego. Otó¿ przedmiotem tej pracy jest napisanie takiej w³a¶nie biblioteki.
+\subsection{Wizja produktu}
+Najwa¿niejszym za³o¿eniem projektu jest dostarczenie biblioteki, która pozwoli na konfigurowalne tworzenie g³êbokich sieci typu RNN, trening, preprocessing danych wej¶ciowych, persystencja wytrenowanych modeli oraz ich dalsze testowanie. Zak³ada siê, ¿e system powinien wspieraæ naukê w co najmniej czterech jêzykach: angielskim, greckim, hiszpañskim i holenderskim. Wy¿ej wspomniana konfigurowalno¶æ powinna pozwalaæ na tworzenie dowolnych sieci parametryzowanych warto¶ciami: g³êboko¶æ sieci, wymiar wektorów wej¶ciowych, ilo¶æ neuronów w warstwach ukrytych, wielko¶æ batchów, itd. Wa¿na jest te¿ mo¿liwo¶æ wizualizacji modelu, np. poprzez generacjê grafu obrazuj±cego strukturê sieci. Preprocessing powinien minimalizowaæ wielko¶æ alfabetu wej¶ciowego bez utraty charakterystyk tekstu.
+\subsection{Analiza ryzyka}
+\subsubsection{Czas testowania}
+Produkcja takiej biblioteki wi±¿e siê z nieustannym testowaniem jako¶ci generowanych sieci, co na ogó³ jest czasoch³onne. Trening sieæ nawet niedu¿ych rozmiarów poch³ania znaczn± ilo¶æ zasobów procesora oraz wcze¶niej wspomnianego czasu, który mo¿e dochodziæ nawet do kilkunastu godzin. W celu minimalizacj zagro¿eñ z tej strony wykorzysta³em moc obliczeniow± klastra Prometheus, co pozwoli³o na testy bez obci±¿ania w³asnego sprzêtu.
+\subsubsection{Nieznajomo¶æ jêzyka}
+Jêzyk Lua nie by³ mi wcze¶niej znany w praktyce, ale spêdzenie czasu na nauce jego sk³adni i zasad nie by³ czasem straconym, gdy¿ jêzyk jest bardzo ciekawy i w po³±czeniu z frameworkiem Torch jest niebywale efektywny w dziedzinie uczenia maszynowego i obliczeñ naukowych.
+\subsubsection{Nowa technologia}
+Jednym z wiêkszych wyzwañ projektu by³o nauczenie siê korzystania z wa¿niejszych bibliotek, które framework Torch udostêpnia. Ta technologia równie¿ nie by³a mi wcze¶niej znana, ale widzê mnóstwo potencjalnych powodów, aby u¿ywaæ go w przysz³o¶ci.
+\subsubsection{Wymagaj±cy temat}
+Do¶æ d³ugi czas spêdzi³em próbuj±c zrozumieæ dzia³anie RNN. Z pomoc± przyszed³ mi Alfredo Canzani (jeden z twórców Torcha) ze swoj± seri± filmów Youtube na temat mechaniki sieci neuronowych, w szczególno¶ci tych rekurencyjnych. Studium kodu ¼ród³owego char-rnn Anthony'ego Karpathy'ego tak¿e da³a mi sporo do¶wiadczenia oraz pomys³ na realizacjê koñcowego produktu.
+\subsection{Studium wykonalno¶ci}
+Dziêki wykorzystaniu zasobów superkomputera Prometheus wiêkszo¶æ zagro¿eñ zwi±zanych z brakiem zasobów pamiêciowych czy czasu procesora zostanie rozwi±zane i w wiêkszym stopniu bêdê móg³ skupiæ siê na planowaniu i rozwijaniu projektu. Korzy¶ciami wynikaj±cymi z braku zespo³u jest fakt, ¿e czas nie jest tracony na konsultacje pomiêdzy cz³onkami oraz kod wykazuje wiêksz± spójno¶æ, jednak¿e projekt powstaje wolniej. Podsumowuj±c, projekt ma du¿e szanse powodzenia, choæ jego u¿yteczno¶æ mo¿e byæ ograniczona.
+\section{Zakres funkcjonalno¶ci}
+%\section{Functional scope}
+\label{sec:zakres-funkcjonalnosci}
+\subsection{Wymagania funkcjonalne}
+\begin{itemize}
+	\item udostêpnienie mechanizmu przetwo¿ania tekstów wej¶ciowych w celu minimalizacji alfabetu jêzyka
+	\item zapewnienie eksportu danych do postaci binarnej, daj±cej mo¿liwo¶æ wielokrotnego wczytania i wykorzystania ich bez ponownego preprocessingu
+	\item mo¿liwo¶æ zdefiniowania i stworzenia dowolnego modelu okre¶lonego przez parametry:
+	\begin{itemize}
+		\item maksymalna ilo¶æ ró¿nych autorów tekstów w modelu
+		\item wielko¶æ warstwy ukrytej
+		\item poziom g³êboko¶ci sieci
+	\end{itemize}
+	\item parametryzowanie trenowania sieci poprzez:
+	\begin{itemize}
+		\item wielko¶æ batchów danych
+		\item wspó³czynnik uczenia
+		\item tempo zmniejszania siê wspó³czynnika uczenia
+		\item maksymaln± ilo¶æ epok
+		\item d³ugo¶æ sekwencji znaków, na której uczony bêdzie model
+	\end{itemize}
+	\item zapewnienie czytelnych logów, w trakcie dzia³ania programu, przedstawiaj±cych postêp uczenia oraz aktualny b³±d
+\end{itemize}
+\subsection{Wymagania niefunkcjonalne}
+\begin{itemize}
+	\item realizacja projektu w ramach pracy in¿ynierskiej
+	\item bazowanie na dokumentach Douglasa Bagnalla na temat wielog³owych RNN i wykorzystanie napisanego przez niego modu³u preprocessingu tekstu
+	\item wykorzystanie jêzyka Lua oraz frameworka Torch
+	\item trenowanie i testowanie sieci na zbiorach PAN 2014 dla zadania weryfikacji autorstwa
+	\item u¿ycie systemu kontroli wersji Git
+\end{itemize}
+\section{Wybrane aspekty realizacji}
+%\section{Selected realization aspects}
+\label{sec:wybrane-aspekty-realizacji}
+\subsection{Multi-headed deep RNN}
+Rekurencyjna sieæ neuronowa ró¿ni siê od sieci MLP tym, ¿e zachowuje kontekst, tzn. poprzednie wej¶cie sieci ma wp³yw na jej aktualne wyj¶cie. Pozwala to na uczenie jej na danych sekwencyjnych, takich jak tekst.
+\newline
+Aby nauczyæ tak± sieæ, nale¿y j± rozwin±æ, tj. skopiowaæ jej model i pospinaæ ze sob± tak jak na rysunku poni¿ej, z zachowaniem zasady, ¿e ka¿da kopia wspó³dzieli swoje parametry z ka¿d± inn±.
+\newline
+\includegraphics[width=\textwidth]{rnn}
+\newline
+Wersja g³êboka sieci rekurencyjnej polega na zwiêkszeniu ilo¶ci stanów ukrytych. Przyk³adowo na rysunku poni¿ej przedstawi³em sieæ o dwóch stanach ukrytych x i y.
+\newline
+\includegraphics[width=\textwidth]{deep}
+\newline
+Na sam koniec warto wspomnieæ, co czyni sieæ wielog³ow±. Otó¿ sieæ mo¿e mieæ wiele wyj¶æ wspó³dziel±cych podstawowy model RNN. W tym przypadku ka¿de wyj¶cie (ka¿da g³owa) reprezentuje prawdopodobieñstwa wyst±pienia kolejnego znaku dla danego autora w reakcji na aktualny znak na wej¶ciu.
+\newline
+Za ca³o¶æ obs³ugi tych sieci odpowiada modu³ RNN, który jest sercem biblioteki. Dostarcza on mo¿liwio¶ci: tworzenia parametryzowanego modelu, rozwijania sieci, uczenia rozwiniêtego modelu, zapisu oraz odczytu ju¿ wytrenowanej sieci.
+\newline
+W odró¿nieniu od sieci Bagnalla nie u¿ywa³em funkcji aktywacji ReSQRT, lecz Tanh. Algorytm uczenia w moim przypadku to normalny SGD, a nie jego optymalizacja Adagrad.
+\subsection{Batch danych}
+Aby przy¶pieszyæ operacjê uczenia sieci, nale¿y zastosowaæ batche danych. Je¿eli wprowadzamy na wej¶cie sieci wektor, to otrzymujemy na wyj¶ciu wektor, lecz równie dobrze mo¿na wprowadziæ na wej¶cie macierz z³o¿on± z kilku wektorów i w efekcie otrzymaæ macierz na wyj¶ciu. Takie podej¶cie jest o wiele bardziej wydajne ni¿ proste iterowanie po danych.
+\newline
+Za przygotowywanie batchów danych odpowiedzialny jest modu³ BatchManager.
+\subsection{Preprocessing}
+Alfabet tekstu wejciowego jest zbyt du¿y, co w sieciach rekurencyjnych mo¿e skutkowaæ s³ab± generalizacj±. W tym celu stosujê ró¿ne redukcje:
+\begin{itemize}
+	\item ka¿d± wielk± literê zastêpujê specjalnym prefiksem oraz odpowiadaj±c± mu ma³± liter±
+	\item wszystkie nawiasy sprowadzam do jednej formy
+	\item ¿adkie znaki usuwam z alfabetu
+	\item oraz inne zale¿ne od jêzyka (angielski, grecki, holenderski, hiszpañski)
+\end{itemize}
+Dodatkowo wielokrotne wyst±pienia danego znaku pod rz±d skracane jest do piêciu wyst±pieñ.
+\section{Organizacja pracy}
+\subsection{Metodyka}
+Praca nad projektem przebiega³a w modelu iteracyjnym. Mo¿na wyró¿niæ najwa¿niejsze czê¶ci ka¿dej iteracji:
+\begin{itemize}
+	\item wybranie funkcjonalno¶ci
+	\item implementacja
+	\item testowanie
+\end{itemize}
+Po zebraniu wymagañ, ale przed przej¶ciem do planowania, mogê wyró¿niæ dodatkow± fazê - zbierania informacji, gdy¿ musia³em jeszcze nauczyæ siê jêzyka Lua, obs³ugi Torcha oraz teorii dzia³ania RNN.
+\subsection{Postêpy}
+W wyniku zastosowanego modelu oraz hierarchii funkcjonalno¶ci podj±³em siê nastêpuj±cych iteracji:
+\begin{enumerate}
+	\item definiowanie modelu - napisanie metody umo¿liwiaj±cej utworzenie konfigurowanego parametrami modelu g³êbokiej sieci RNN
+	\item wizualizacja oraz rozwiniêcie modelu - dodanie opcji eksportu modelu w postaci grafu oraz zaimplementowanie metody rozwijaj±cej model w czasie
+	\item podstawowy preprocessing - przygotowanie systemu przygotowuj±cego tekst, poprzez redukcjê alfabetu i zapis w postaci binarnej (na razie tylko dla jêzyka angielskiego)
+	\item trening - zaimplementowanie metody uczenia rozwiniêtej sieci
+	\item zapis oraz testy na Prometheusie - dodanie opcji eksportu i importu sieci oraz rozpoczêcie testów na klastrze
+	\item wielog³owa sieæ - rozwiniêcie sieci do postaci wielog³owej, poprawa implementacji, wprowadzenie mo¿liwo¶ci uczenia na tekstach wielu autorów
+	\item testy na Prometheusie - testowanie wielog³owych sieci
+	\item wprowadzenie minibatchów - implementacja batchera, która przyspieszy³a naukê niemal trzykrotnie minibatchów wielko¶ci 40
+	\item pozosta³e jêzyki - dodanie wsparcia dla jêzyków: hiszpañskiego, greckiego i holenderskiego
+	\item opcje i kolorowanie - parsowanie argumentów lini poleceñ w celu uzyskania parametrów sieci oraz kolorowanie tekstu w konsoli
+\end{enumerate}
+%\section{Work organization}
+\label{sec:organizacja-pracy}
+
+\section{Wyniki projektu}
+%\section{Project results}
+
+\label{sec:wyniki-projektu}
+
+\emph{Wskazanie wyników projektu (co konkretnie uda³o siê uzyskaæ:
+  oprogramowanie, dokumentacja, raporty z testów/wdro¿enia, itd.), prezentacja wyników
+  i ocena ich u¿yteczno¶ci (jak zosta³o to zweryfikowane --- np.\ wnioski
+  klienta/u¿ytkownika, zrealizowane testy wydajno¶ciowe, itd.),
+  istniej±ce ograniczenia i propozycje dalszych prac.}
+
+% o ile to mozliwe prosze uzywac odwolan \cite w konkretnych miejscach a nie \nocite
+
+\nocite{deep_learning,db_1,db_2,alfredo,lua,torch,torch_ref,grid,deep,pan}
+
+\bibliography{bibliografia}
+
+\end{document}

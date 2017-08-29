@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: procesowa.aux
+The style file: abbrv.bst
+Database file #1: bibliografia.bib
+Warning--to sort, need author or key in lua
+Warning--to sort, need author or key in torch
+Warning--to sort, need author or key in torch_ref
+Warning--to sort, need author or key in grid
+Warning--to sort, need author or key in pan
+You've used 10 entries,
+            2118 wiz_defined-function locations,
+            532 strings with 4674 characters,
+and the built_in function-call counts, 1917 in all, are:
+= -- 176
+> -- 52
+< -- 0
++ -- 24
+- -- 14
+* -- 62
+:= -- 282
+add.period$ -- 25
+call.type$ -- 10
+change.case$ -- 35
+chr.to.int$ -- 0
+cite$ -- 15
+duplicate$ -- 75
+empty$ -- 226
+format.name$ -- 14
+if$ -- 441
+int.to.chr$ -- 0
+int.to.str$ -- 10
+missing$ -- 2
+newline$ -- 48
+num.names$ -- 10
+pop$ -- 81
+preamble$ -- 1
+purify$ -- 26
+quote$ -- 0
+skip$ -- 80
+stack$ -- 0
+substring$ -- 50
+swap$ -- 10
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 38
+warning$ -- 5
+while$ -- 10
+width$ -- 12
+write$ -- 83
+(There were 5 warnings)
