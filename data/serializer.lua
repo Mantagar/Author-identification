@@ -23,7 +23,6 @@ for i=4,#arg do
 	if string.sub(name,-#ending)==ending then
 		unknown_data[unknown_index]=converted
 		unknown_index=unknown_index+1
-		print("did it")
 	else
 		known_data[known_index]=converted
 		known_index=known_index+1

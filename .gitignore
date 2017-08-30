@@ -2,5 +2,6 @@
 *.svg
 *.dot
 *.t7
+*.rnn
 data/reduced_authors/
 
