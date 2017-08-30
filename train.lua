@@ -26,10 +26,10 @@ config = cmd:parse(arg)
 function getAuthorsData(amount)
 	local i=1
 	local authors={}
-	local pfile = io.popen('ls data/binary_authors | head -n '..amount)
+	local pfile = io.popen('ls data/known | head -n '..amount)
 	for filename in pfile:lines() do
 		print("  Author "..i.."\t"..Colorizer.green("\u{2713}"))
-		authors[i]=torch.load('./data/binary_authors/'..filename)
+		authors[i]=torch.load('./data/known/'..filename)
 		i = i + 1
 	end
 	pfile:close()

@@ -25,15 +25,18 @@ case $1 in
 		exit
 esac
 original="./authors"
-binary="./binary_authors"
 reduced="./reduced_authors"
+known="./known"
+unknown="./unknown"
 map="./mappings/map.py"
 
 echo -e "\e[32;2;1mCleaning workplace directories\e[0m"
-rm -R $binary
 rm -R $reduced
-mkdir $binary
+rm -R $known
+rm -R $unknown
 mkdir $reduced
+mkdir $known
+mkdir $unknown
 
 echo -e "\e[32;2;1mMapping files\e[0m"
 for author in `ls $original`
@@ -51,10 +54,11 @@ echo -e "\e[32;2;1mConverting mapped files to tensor data\e[0m"
 
 for author in `ls $reduced`
 do
-	torch_file="$binary/$author.t7"
-	echo "Converting $reduced/$author/* ---> $torch_file"
+	known_file="$known/$author.t7"
+	unknown_file="$unknown/$author.t7"
+	echo "  $reduced/$author/*"
 	for document in "$reduced/$author/*"
 	do
-		th serializer.lua $torch_file $language $document
+		th serializer.lua $known_file $unknown_file $language $document
 	done
 done

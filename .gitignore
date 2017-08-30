@@ -1,6 +1,6 @@
 *.pyc
 *.svg
 *.dot
+*.t7
 data/reduced_authors/
-data/binary_authors/
 
