@@ -4,6 +4,7 @@ require 'nn'
 require 'nngraph'
 local RNN=require 'RNN'
 local Colorizer=require 'Colorizer'
+local Utils=require 'Utils'
 
 --parse command line
 cmd = torch.CmdLine()
@@ -23,20 +24,8 @@ cmd:text()
 config = cmd:parse(arg)
 
 --load data
-function getAuthorsData(amount)
-	local i=1
-	local authors={}
-	local pfile = io.popen('ls data/known | head -n '..amount)
-	for filename in pfile:lines() do
-		print("  Author "..i.."\t"..Colorizer.green("\u{2713}"))
-		authors[i]=torch.load('./data/known/'..filename)
-		i = i + 1
-	end
-	pfile:close()
-	return authors
-end
 print(Colorizer.green("Loading data..."))
-local authors=getAuthorsData(config.max_authors)
+local authors=Utils.getKnownData(config.max_authors)
 if #authors==0 then
 	print(Colorizer.red("No data availible!"))
 	return
@@ -64,7 +53,7 @@ for i=1,config.max_epochs do
 	if i%5==0 then
 		local mem=collectgarbage("count")
 		collectgarbage()
-		print("Garbage collector run.")
+		print(Colorizer.green("Garbage collector run."))
 		print("Memory before = ",mem)
 		print("Memory after = ",collectgarbage("count"))
 	end
@@ -72,7 +61,7 @@ for i=1,config.max_epochs do
 end
 
 --save RNN
-print("Learning finished")
-print("Saving snapshot...")
+print(Colorizer.green("Learning finished"))
+print(Colorizer.green("Saving snapshot..."))
 RNN.makeSnapshot(rnn)
 

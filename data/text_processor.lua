@@ -217,8 +217,8 @@ function TP.tensorToChar(tensor,alphabet)
 end
 
 function TP.convertFileIntoData(filename,alphabet)
-	file=io.open(filename,"r")
-	text=file:read("*a")
+	local file=io.open(filename,"r")
+	local text=file:read("*a")
 	file:close()
 
 	--pick utf8 char and convert to tensor
