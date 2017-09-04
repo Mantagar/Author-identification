@@ -128,6 +128,8 @@ W wyniku zastosowanego modelu oraz hierarchii funkcjonalno¶ci podj±³em siê nastê
 	\item wprowadzenie minibatchów - implementacja batchera, która przyspieszy³a naukê niemal trzykrotnie minibatchów wielko¶ci 40
 	\item pozosta³e jêzyki - dodanie wsparcia dla jêzyków: hiszpañskiego, greckiego i holenderskiego
 	\item opcje i kolorowanie - parsowanie argumentów lini poleceñ w celu uzyskania parametrów sieci oraz kolorowanie tekstu w konsoli
+	\item zaimplementowanie programu testuj±cego wydajno¶æ nauczonych sieci
+	\item refaktoryzacja, modularyzacja kodu oraz testowanie
 \end{enumerate}
 %\section{Work organization}
 \label{sec:organizacja-pracy}
@@ -137,12 +139,38 @@ W wyniku zastosowanego modelu oraz hierarchii funkcjonalno¶ci podj±³em siê nastê
 
 \label{sec:wyniki-projektu}
 
-\emph{Wskazanie wyników projektu (co konkretnie uda³o siê uzyskaæ:
-  oprogramowanie, dokumentacja, raporty z testów/wdro¿enia, itd.), prezentacja wyników
-  i ocena ich u¿yteczno¶ci (jak zosta³o to zweryfikowane --- np.\ wnioski
-  klienta/u¿ytkownika, zrealizowane testy wydajno¶ciowe, itd.),
-  istniej±ce ograniczenia i propozycje dalszych prac.}
+\subsection{Osi±gniêcia}
+W wyniku przeprowadzonych prac uda³o siê zaimplementowaæ bibliotekê pozwalaj±c± na tworzenie wielog³owych, g³êbokich sieci neuronowych - ich struktura jest kontrolowana parametrami, trenowanie sieci na sprecjalnie przygotowanych plikach ucz±cych, zapisywanie wytrenowanych sieci oraz testowanie ich wydajno¶ci i skuteczno¶ci.
+\subsection{Wyniki eksperymentów}
+Nawet sieci uczone krótko (nie wiêcej ni¿ 5 epok) wykazywa³y skuteczno¶æ weryfikacji autorstwa relatywnie wysok±. Podczas testowania wspó³czynnik weryfikacji nieznanych tekstów w jêzyku angielskim zawiera³ siê w przedziale 0.6-0.9 w zale¿no¶ci od ilo¶ci autorów i czasu treningu.
+\subsection{Propozycje dalszego rozwoju}
+Sieci definiowane przez program u¿ywaj± zwyk³ego algorytmu SGD, aby poprawiæ ich wydajno¶æ mo¿na by dodaæ pewne optymalizacje, np. za pomoc± pakietu optim.
+Dziêki zastosowaniu batchów nauka przebiega o wiele szybciej, choæ z wykorzystaniem karty graficznej i pakietów cuda lub cunn mo¿liwe jest osi±gniêcie przyspieszenia wielokrotnie wiêkszego.
+Mo¿na by próbowaæ pomy¶leæ nad wprowadzeniem lepszych metod weryfikacji autorstwa na podstawie wyników sieci.
 
+\section{Dodatki}
+\subsection{Spotkania z opiekunem}
+\emph{14.03.2017}
+\newline
+Spotkanie w celu omówienia tematu pracy. Zosta³em zapoznany ze szczegó³ami oraz zosta³y mi przedstawione dokumenty bêd±ce podstaw± tej pracy, jak równie¿ zosta³em poinformowany potrzebie nauczenia siê jêzyka Lua oraz obs³ugi frameworka Torch.
+\newline
+\newline
+\emph{28.03.2017}
+\newline
+Spotkanie w celu doprecyzowania szczegó³ów i odpowiedzenia na pytania odno¶nie charakterystyki tematu. Zosta³y mi przedstawione dodatkowe modu³y Torcha pozwalaj±ce na rozwiniêcie projektu mniejszym nak³adem pracy.
+\newline
+\newline
+\emph{23.05.2017}
+\newline
+Spotkanie prezentuj±ce postêpy w pracach nad projektem. Zosta³em poinformowany o mo¿liwo¶ci wykorzystania klastra Prometheus do testów sieci oraz zosta³em dodany do granta do dostêpu do superkomputera. Uzgodnili¶my równie¿ wtedy utworzenie repozytorium w systemie GitHub w celu nadzorowania dalszych postêpów prac. Projekt jest dostêpny pod adresem: \url{https://github.com/Mantagar/Author-identification}
+\subsection{Spotkania z prowadz±cym pracowniê projektow±}
+W VI semestrze odby³y siê cztery spotkania pracowni projektowej.
+\begin{enumerate}
+	\item Na pierwszym przedstawione zosta³y nam zasady zaliczenia przedmiotu oraz zostali¶my poinformowani o wymaganiach odno¶nie kolejnych zajêæ.
+	\item Na drugim spotkaniu prezentowali¶my wizjê naszych prac.
+	\item Na trzecim prezentowali¶my analizê ryzyka oraz studium wykonalno¶ci naszych projektów oraz wymagania funkcjonalne i niefunkcjonalne.
+	\item Na czwartym i ostanim spotkaniu prezentowali¶my postêpy prac nad projektami.
+\end{enumerate}
 % o ile to mozliwe prosze uzywac odwolan \cite w konkretnych miejscach a nie \nocite
 
 \nocite{deep_learning,db_1,db_2,alfredo,lua,torch,torch_ref,grid,deep,pan}

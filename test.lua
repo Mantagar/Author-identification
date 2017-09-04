@@ -43,13 +43,13 @@ local alphabet=data[1][1].alphabet
 --Verify texts
 local correct=0
 for i=1,#data do
-		print(Colorizer.green("Calculating match rates..."))
+		print(Colorizer.green("\nCalculating match rates..."))
 		local matches=Utils.getMatchRate(rnn,data[i][1],alphabet)
 		print(Colorizer.yellow("Unknown for author:"),i)
 		print(Colorizer.yellow("Correct answer:\t"),answers[i])
 		local _,max_index=matches:max(1)
 		max_index=max_index[1]
-		print(Colorizer.yellow("Max value for author:"),max_index)
+		print(Colorizer.yellow("Best fit for author:"),max_index)
 		local size=(#matches)[1]
 		local average=matches:sum()/size
 		print(Colorizer.yellow("Average score:"),average)

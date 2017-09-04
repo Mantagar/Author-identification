@@ -20,3 +20,9 @@
 \contentsline {subsection}{\numberline {4.1}Metodyka}{8}
 \contentsline {subsection}{\numberline {4.2}Post\k epy}{8}
 \contentsline {section}{\numberline {5}Wyniki projektu}{9}
+\contentsline {subsection}{\numberline {5.1}Osi\k agni\k ecia}{9}
+\contentsline {subsection}{\numberline {5.2}Wyniki eksperyment\'ow}{9}
+\contentsline {subsection}{\numberline {5.3}Propozycje dalszego rozwoju}{9}
+\contentsline {section}{\numberline {6}Dodatki}{9}
+\contentsline {subsection}{\numberline {6.1}Spotkania z opiekunem}{9}
+\contentsline {subsection}{\numberline {6.2}Spotkania z prowadz\k acym pracowni\k e projektow\k a}{10}
