@@ -3,8 +3,8 @@
 \contentsline {subsection}{\numberline {1.1}Charakterystyka problemu}{4}
 \contentsline {subsection}{\numberline {1.2}Motywacja projektu}{4}
 \contentsline {subsection}{\numberline {1.3}Wizja produktu}{4}
-\contentsline {subsection}{\numberline {1.4}Analiza ryzyka}{4}
-\contentsline {subsubsection}{\numberline {1.4.1}Czas testowania}{4}
+\contentsline {subsection}{\numberline {1.4}Analiza ryzyka}{5}
+\contentsline {subsubsection}{\numberline {1.4.1}Czas testowania}{5}
 \contentsline {subsubsection}{\numberline {1.4.2}Nieznajomo\'s\'c j\k ezyka}{5}
 \contentsline {subsubsection}{\numberline {1.4.3}Nowa technologia}{5}
 \contentsline {subsubsection}{\numberline {1.4.4}Wymagaj\k acy temat}{5}
@@ -13,16 +13,20 @@
 \contentsline {subsection}{\numberline {2.1}Wymagania funkcjonalne}{5}
 \contentsline {subsection}{\numberline {2.2}Wymagania niefunkcjonalne}{6}
 \contentsline {section}{\numberline {3}Wybrane aspekty realizacji}{6}
-\contentsline {subsection}{\numberline {3.1}Multi-headed deep RNN}{6}
-\contentsline {subsection}{\numberline {3.2}Batch danych}{7}
-\contentsline {subsection}{\numberline {3.3}Preprocessing}{7}
-\contentsline {section}{\numberline {4}Organizacja pracy}{8}
-\contentsline {subsection}{\numberline {4.1}Metodyka}{8}
-\contentsline {subsection}{\numberline {4.2}Post\k epy}{8}
-\contentsline {section}{\numberline {5}Wyniki projektu}{9}
-\contentsline {subsection}{\numberline {5.1}Osi\k agni\k ecia}{9}
-\contentsline {subsection}{\numberline {5.2}Wyniki eksperyment\'ow}{9}
-\contentsline {subsection}{\numberline {5.3}Propozycje dalszego rozwoju}{9}
-\contentsline {section}{\numberline {6}Dodatki}{9}
-\contentsline {subsection}{\numberline {6.1}Spotkania z opiekunem}{9}
-\contentsline {subsection}{\numberline {6.2}Spotkania z prowadz\k acym pracowni\k e projektow\k a}{10}
+\contentsline {subsection}{\numberline {3.1}Wielog\IeC {\l }owicowa g\IeC {\l }\k eboka rekurencyjna sie\'c neuronowa (ang. \emph {Multi-headed deep RNN})}{6}
+\contentsline {subsection}{\numberline {3.2}Paczki danych}{8}
+\contentsline {subsection}{\numberline {3.3}Preprocesing}{8}
+\contentsline {subsection}{\numberline {3.4}Algorytm weryfikacji autorstwa}{8}
+\contentsline {section}{\numberline {4}Organizacja pracy}{9}
+\contentsline {subsection}{\numberline {4.1}Metodyka}{9}
+\contentsline {subsection}{\numberline {4.2}Post\k epy}{9}
+\contentsline {section}{\numberline {5}Wyniki projektu}{10}
+\contentsline {subsection}{\numberline {5.1}Osi\k agni\k ecia}{10}
+\contentsline {subsection}{\numberline {5.2}Problemy}{10}
+\contentsline {subsubsection}{\numberline {5.2.1}Eksploduj\k acy gradient}{10}
+\contentsline {subsubsection}{\numberline {5.2.2}Optymalizacja Adagrad}{10}
+\contentsline {subsection}{\numberline {5.3}Wyniki eksperyment\'ow}{10}
+\contentsline {subsection}{\numberline {5.4}Propozycje dalszego rozwoju}{11}
+\contentsline {section}{\numberline {6}Dodatki}{11}
+\contentsline {subsection}{\numberline {6.1}Spotkania z opiekunem}{11}
+\contentsline {subsection}{\numberline {6.2}Spotkania z prowadz\k acym pracowni\k e projektow\k a}{11}

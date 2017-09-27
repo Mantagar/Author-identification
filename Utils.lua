@@ -1,6 +1,5 @@
 local Utils={}
 local Colorizer=require 'Colorizer'
-local TP=require 'data/text_processor.lua'
 
 function Utils.getKnownData(amount)
 	local i=1
@@ -50,28 +49,28 @@ function Utils.loadAnswers(filename,amount)
 end
 
 function Utils.getMatchRate(rnn,data,alphabet)
-	local matched=torch.zeros(rnn.heads);
 	--Initialize the initial hidden state with zero matrices
 	local hiddenState={}
-	for r=1,rnn.rnn_size do
+	for r=1,rnn.depth do
 		hiddenState[r]=torch.zeros(rnn.hidden_size)
 	end
 	for iteration=1,#data-1 do
 		input=data[iteration]
 		rnn[1]:forward({input,table.unpack(hiddenState)})
 		--Initialize next hidden state
-		for r=1,rnn.rnn_size do
+		for r=1,rnn.depth do
 			hiddenState[r]=rnn[1].output[r+rnn.heads]:clone()
 		end
-		if iteration>10 then 
-			--Initialize target
-			local target=data[iteration+1]
-			for h=1,rnn.heads do
-				if TP.tensorToChar(target,alphabet)==TP.tensorToChar(rnn[1].output[h],alphabet) then matched[h]=matched[h]+1 end
-			end
-		end
 	end
-	return matched/(#data-11)
+  
+	local _,target=data[#data]:max(1)
+	local criterion=nn.CrossEntropyCriterion()
+	local err={}
+	for i=1,rnn[1].heads do
+		err[i]=criterion:forward(rnn[1].output[i],target)
+	end
+
+	return torch.Tensor(err)
 end
 
 

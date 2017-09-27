@@ -5,7 +5,7 @@ require 'nngraph'
 local RNN=require 'RNN'
 local Colorizer=require 'Colorizer'
 local Utils=require 'Utils'
---usage: th test.lua rnn_name.rnn path_to_answers
+--usage: th test.lua rnn_name path_to_answers
 local rnn_name=arg[1]
 local answers_path=arg[2]
 
@@ -15,14 +15,14 @@ print(Colorizer.green("Loading network..."))
 local rnn=RNN.loadSnapshot(rnn_name)
 rnn.input_size=math.floor(rnn.input_size)
 rnn.hidden_size=math.floor(rnn.hidden_size)
-rnn.rnn_size=math.floor(rnn.rnn_size)
+rnn.depth=math.floor(rnn.depth)
 rnn.heads=math.floor(rnn.heads)
 
 --Display characteristics
 print(Colorizer.yellow("RNN:\t\t"),rnn_name)
 print(Colorizer.yellow("INPUT/OUTPUT SIZE:"),rnn.input_size)
 print(Colorizer.yellow("HIDDEN SIZE:\t"),rnn.hidden_size)
-print(Colorizer.yellow("RNN SIZE (STACKS):"),rnn.rnn_size)
+print(Colorizer.yellow("RNN SIZE (STACKS):"),rnn.depth)
 print(Colorizer.yellow("HEADS:\t\t"),rnn.heads)
 
 --Load answers
@@ -47,20 +47,21 @@ for i=1,#data do
 		local matches=Utils.getMatchRate(rnn,data[i][1],alphabet)
 		print(Colorizer.yellow("Unknown for author:"),i)
 		print(Colorizer.yellow("Correct answer:\t"),answers[i])
-		local _,max_index=matches:max(1)
-		max_index=max_index[1]
-		print(Colorizer.yellow("Best fit for author:"),max_index)
+		local _,min_index=matches:min(1)
+		min_index=min_index[1]
 		local size=(#matches)[1]
-		local average=matches:sum()/size
-		print(Colorizer.yellow("Average score:"),average)
 		for k=1,size do
 			if k==i then
-				print(Colorizer.red(" "..matches[k]))
+				io.write(Colorizer.white(" "..matches[k]))
 			else
-				print(" "..matches[k])
+				io.write(" "..matches[k])
 			end
+			if k==min_index then
+				io.write(Colorizer.red(" ← the best score"))
+			end
+			io.write("\n")
 		end
-		if (average<matches[i] and answers[i]==true) or (average>matches[i] and answers[i]==false) then
+		if (i==min_index and answers[i]==true) or (i~=min_index and answers[i]==false) then
 			print(Colorizer.yellow("Verification successful"))
 			correct=correct+1
 		else

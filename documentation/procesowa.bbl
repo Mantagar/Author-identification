@@ -1,13 +1,12 @@
 \begin{thebibliography}{10}
 
-\bibitem{pan}
-Author identification task.
-\newblock
-  \url{http://pan.webis.de/clef15/pan15-web/author-identification.html},\url{http://pan.webis.de/clef14/pan14-web/author-identification.html}.
-
 \bibitem{lua}
 Lua tutorial.
 \newblock \url{https://www.lua.org/}.
+
+\bibitem{grid}
+Pl-grid user manual.
+\newblock \url{https://docs.cyfronet.pl/pages/viewpage.action?pageId=4260592}.
 
 \bibitem{torch_ref}
 Torch reference manual.
@@ -17,9 +16,10 @@ Torch reference manual.
 Torch tutorial.
 \newblock \url{http://torch.ch/docs/tutorials.html}.
 
-\bibitem{grid}
-User manual pl-grid.
-\newblock \url{https://docs.cyfronet.pl/pages/viewpage.action?pageId=4260592}.
+\bibitem{pan}
+Zadanie weryfikacji autorstwa.
+\newblock
+  \url{http://pan.webis.de/clef15/pan15-web/author-identification.html},\url{http://pan.webis.de/clef14/pan14-web/author-identification.html}.
 
 \bibitem{db_1}
 D.~Bagnall.
@@ -32,7 +32,7 @@ D.~Bagnall.
 \newblock \url{https://arxiv.org/abs/1608.04485}.
 
 \bibitem{deep}
-Y.~Bengio et~al.
+Y.~Bengio.
 \newblock How to construct deep recurrent neural networks.
 \newblock \url{https://arxiv.org/abs/1312.6026}.
 

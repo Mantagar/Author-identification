@@ -16,13 +16,13 @@ end
 
 --[[
 batcher - table created with createBatcher function
-seq_size - how many times in time rnn was unfolded
+unroll_times - how many times rnn was unrolled for the training purpose (BPTT steps)
 ]]
-function BatchManager.nextBatch(batcher,seq_size)
+function BatchManager.nextBatch(batcher,unroll_times)
 	local inputs={}
 	local labels={}
 	local starting_pos=batcher.pos
-	for i=1,seq_size do
+	for i=1,unroll_times do
 		inputs[i]=torch.DoubleTensor(batcher.rows,batcher.cols)
 		labels[i]=torch.DoubleTensor(batcher.rows,batcher.cols)
     for r=1,batcher.rows do
@@ -41,18 +41,18 @@ end
 
 --here we can test that it actually works
 function BatchManager.test()
-local seq_size=5
+local unroll_times=5
 	local data={}
 	for i=1,10 do
 		data[i]=torch.Tensor{i,i,i,i}
 	end
 	local batcher=BatchManager.createBatcher(data,5,4)
 	while BatchManager.isNextBatch(batcher) do
-		local in1,out1=BatchManager.nextBatch(batcher,seq_size)
-		for i=1,seq_size do
+		local in1,out1=BatchManager.nextBatch(batcher,unroll_times)
+		for i=1,unroll_times do
 			print(in1[i])
 		end
-		for i=1,seq_size do
+		for i=1,unroll_times do
 			print(out1[i])
 		end
 	end

@@ -10,15 +10,15 @@ Warning--to sort, need author or key in grid
 Warning--to sort, need author or key in pan
 You've used 10 entries,
             2118 wiz_defined-function locations,
-            532 strings with 4674 characters,
-and the built_in function-call counts, 1917 in all, are:
-= -- 176
-> -- 52
+            532 strings with 4666 characters,
+and the built_in function-call counts, 1884 in all, are:
+= -- 173
+> -- 46
 < -- 0
-+ -- 24
-- -- 14
-* -- 62
-:= -- 282
++ -- 22
+- -- 12
+* -- 59
+:= -- 276
 add.period$ -- 25
 call.type$ -- 10
 change.case$ -- 35
@@ -26,8 +26,8 @@ chr.to.int$ -- 0
 cite$ -- 15
 duplicate$ -- 75
 empty$ -- 226
-format.name$ -- 14
-if$ -- 441
+format.name$ -- 12
+if$ -- 434
 int.to.chr$ -- 0
 int.to.str$ -- 10
 missing$ -- 2
@@ -37,7 +37,7 @@ pop$ -- 81
 preamble$ -- 1
 purify$ -- 26
 quote$ -- 0
-skip$ -- 80
+skip$ -- 78
 stack$ -- 0
 substring$ -- 50
 swap$ -- 10
