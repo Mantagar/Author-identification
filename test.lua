@@ -41,33 +41,40 @@ end
 local alphabet=data[1][1].alphabet
 
 --Verify texts
+local avg_matches=torch.zeros(rnn[1].heads)
 local correct=0
+local matches={}
+print(Colorizer.green("Calculating average performance..."))
 for i=1,#data do
-		print(Colorizer.green("\nCalculating match rates..."))
-		local matches=Utils.getMatchRate(rnn,data[i][1],alphabet)
-		print(Colorizer.yellow("Unknown for author:"),i)
+		print("  Calculating scores for the unknown text: ",i)
+		matches[i]=Utils.getMatchRate(rnn,data[i][1],alphabet)
+		avg_matches=avg_matches+matches[i]
+end
+avg_matches=avg_matches/rnn[1].heads
+
+for i=1,#data do
+		print(Colorizer.yellow("\nUnknown for author:"),i)
 		print(Colorizer.yellow("Correct answer:\t"),answers[i])
-		local _,min_index=matches:min(1)
-		min_index=min_index[1]
-		local size=(#matches)[1]
+		local size=#data
+		local prob=matches[i]-avg_matches
+		min,_=prob:min(1)
+		prob=prob-min[1]
+		max,_=prob:max(1)
+		prob=prob/max[1]
 		for k=1,size do
 			if k==i then
-				io.write(Colorizer.white(" "..matches[k]))
+				print(Colorizer.white(" "..prob[k]))
 			else
-				io.write(" "..matches[k])
+				print(" "..prob[k])
 			end
-			if k==min_index then
-				io.write(Colorizer.red(" ← the best score"))
-			end
-			io.write("\n")
 		end
-		if (i==min_index and answers[i]==true) or (i~=min_index and answers[i]==false) then
-			print(Colorizer.yellow("Verification successful"))
+		if (prob[i]>0.5 and answers[i]==true) or (prob[i]<0.5 and answers[i]==false) then
+			print(Colorizer.green("Verification successful"))
 			correct=correct+1
 		else
-			print(Colorizer.yellow("Verification failed"))
+			print(Colorizer.red("Verification failed"))
 		end
 end
 --Print final outcome
-print(Colorizer.green("Preparing final outcome...")) 
+print(Colorizer.green("\nPreparing final outcome...")) 
 print(Colorizer.yellow("Overall verification score:"),correct/rnn.heads)

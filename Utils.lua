@@ -49,6 +49,7 @@ function Utils.loadAnswers(filename,amount)
 end
 
 function Utils.getMatchRate(rnn,data,alphabet)
+	local err=torch.zeros(rnn[1].heads)
 	--Initialize the initial hidden state with zero matrices
 	local hiddenState={}
 	for r=1,rnn.depth do
@@ -61,16 +62,16 @@ function Utils.getMatchRate(rnn,data,alphabet)
 		for r=1,rnn.depth do
 			hiddenState[r]=rnn[1].output[r+rnn.heads]:clone()
 		end
+		if iteration>10 then
+			local _,target=data[iteration]:max(1)
+			local criterion=nn.CrossEntropyCriterion()
+			for i=1,rnn[1].heads do
+				err[i]=err[i]+criterion:forward(rnn[1].output[i],target)
+			end
+		end
 	end
   
-	local _,target=data[#data]:max(1)
-	local criterion=nn.CrossEntropyCriterion()
-	local err={}
-	for i=1,rnn[1].heads do
-		err[i]=criterion:forward(rnn[1].output[i],target)
-	end
-
-	return torch.Tensor(err)
+	return err/(#data-11)
 end
 
 
