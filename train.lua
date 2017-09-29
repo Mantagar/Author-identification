@@ -13,12 +13,12 @@ cmd:text(Colorizer.yellow('Run to train multi-headed, character-level, deep RNN'
 cmd:text()
 cmd:text(Colorizer.yellow('Configuration:'))
 cmd:option('-max_authors',100,'maximum number of authors')
-cmd:option('-hidden_size',99,'neurons in the hidden layers')
+cmd:option('-hidden_size',199,'neurons in the hidden layers')
 cmd:option('-depth',3,'stacks in deep RNN')
 cmd:option('-unroll_times',70,'length of character sequences')
-cmd:option('-max_epochs',10,'maximum number of cycles over the data')
+cmd:option('-max_epochs',100,'maximum number of cycles over the data')
 cmd:option('-learning_rate',0.005,'learning rate')
-cmd:option('-learning_rate_decay',0.97,'learning rate decay after each epoch')
+cmd:option('-learning_rate_decay',1,'learning rate decay after each epoch')
 cmd:option('-batch_size',40,'size of the input batch')
 cmd:text()
 config = cmd:parse(arg)
@@ -51,6 +51,8 @@ for i=1,config.max_epochs do
 		end
 	end
 	if i%5==0 then
+		print(Colorizer.green("Saving snapshot..."))
+		RNN.makeSnapshot(rnn)
 		local mem=collectgarbage("count")
 		collectgarbage()
 		print(Colorizer.green("Garbage collector run."))
