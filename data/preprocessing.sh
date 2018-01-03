@@ -11,6 +11,8 @@
 #				Reduta Ordona.txt
 #
 #
+DIRNAME=`dirname $0`
+cd "$DIRNAME"
 if [ $# -ne 1 ]; then
 	echo -e "\e[31;1mAborting! Expecting exactly one argument.\e[0m"
 	exit
