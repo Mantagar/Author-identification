@@ -58,10 +58,12 @@ for i=1,#data do
 		local size=#data
 
     local prob=matches[i]-avg_matches
-		min,_=prob:min(1)
+		local min,best=prob:min(1)
 		prob=prob-min[1]
-		max,_=prob:max(1)
+		local max,_=prob:max(1)
 		prob=1-prob/max[1]
+--[[
+    --print scores for all heads display
 		for k=1,size do
 			if k==i then
 				print(Colorizer.white(" "..prob[k]))
@@ -69,7 +71,10 @@ for i=1,#data do
 				print(" "..prob[k])
 			end
 		end
-		if (prob[i]>0.5 and answers[i]==true) or (prob[i]<0.5 and answers[i]==false) then
+--]]
+    --print score for only the questioned head
+    print(Colorizer.white(" "..prob[i]))
+		if (i==best[1] and answers[i]==true) or (i~=best[1] and answers[i]==false) then
 			print(Colorizer.green("Verification successful"))
 			correct=correct+1
 		else
