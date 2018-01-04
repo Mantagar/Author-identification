@@ -51,17 +51,16 @@ for i=1,#data do
 		avg_matches=avg_matches+matches[i]
 end
 avg_matches=avg_matches/rnn[1].heads
---print results for every unknown text
+
 for i=1,#data do
 		print(Colorizer.yellow("\nUnknown for author:"),i)
 		print(Colorizer.yellow("Correct answer:\t"),answers[i])
 		local size=#data
-
-    local prob=matches[i]-avg_matches
+		local prob=matches[i]-avg_matches
 		min,_=prob:min(1)
 		prob=prob-min[1]
 		max,_=prob:max(1)
-		prob=1-prob/max[1]
+		prob=prob/max[1]
 		for k=1,size do
 			if k==i then
 				print(Colorizer.white(" "..prob[k]))

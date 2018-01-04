@@ -63,7 +63,7 @@ function Utils.getMatchRate(rnn,data,alphabet)
 			hiddenState[r]=rnn[1].output[r+rnn.heads]:clone()
 		end
 		if iteration>10 then
-			local _,target=data[iteration]:max(1)
+			local _,target=data[iteration+1]:max(1)
 			local criterion=nn.CrossEntropyCriterion()
 			for i=1,rnn[1].heads do
 				err[i]=err[i]+criterion:forward(rnn[1].output[i],target)
