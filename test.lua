@@ -62,7 +62,7 @@ for i=1,#data do
 		prob=prob-min[1]
 		local max,_=prob:max(1)
 		prob=1-prob/max[1]
---[[
+
     --print scores for all heads display
 		for k=1,size do
 			if k==i then
@@ -71,9 +71,9 @@ for i=1,#data do
 				print(" "..prob[k])
 			end
 		end
---]]
+
     --print score for only the questioned head
-    print(Colorizer.white(" "..prob[i]))
+    --print(Colorizer.white(" "..prob[i]))
 		if (i==best[1] and answers[i]==true) or (i~=best[1] and answers[i]==false) then
 			print(Colorizer.green("Verification successful"))
 			correct=correct+1
